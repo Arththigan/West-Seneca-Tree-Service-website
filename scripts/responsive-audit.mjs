@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 
 const chromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+const baseUrl = process.env.AUDIT_BASE_URL || 'http://127.0.0.1:3000'
 const port = 9333
 const profile = mkdtempSync(join(tmpdir(), 'west-seneca-audit-'))
 const chrome = spawn(chromePath, [
@@ -63,7 +64,9 @@ const routes = [
   '/services/stump-grinding', '/services/storm-cleanup', '/our-process',
   '/why-us', '/contact', '/privacy-policy', '/terms-conditions',
 ]
-const widths = [320, 360, 375, 390, 414, 480, 600, 768, 820, 1024, 1280, 1366, 1440, 1600, 1920, 2560]
+const widths = process.env.AUDIT_QUICK
+  ? [390, 1440]
+  : [320, 360, 375, 390, 414, 480, 600, 768, 820, 1024, 1280, 1366, 1440, 1600, 1920, 2560]
 const failures = []
 const { targetId } = await command('Target.createTarget', { url: 'about:blank' })
 const attached = await command('Target.attachToTarget', { targetId, flatten: true })
@@ -79,8 +82,8 @@ for (const width of widths) {
   }, sessionId)
 
   for (const route of routes) {
-    await command('Page.navigate', { url: `http://127.0.0.1:3000${route}` }, sessionId)
-    await delay(450)
+    await command('Page.navigate', { url: `${baseUrl}${route}` }, sessionId)
+    await delay(baseUrl.startsWith('https://') ? 1800 : 450)
     const result = await command('Runtime.evaluate', {
       returnByValue: true,
       expression: `(() => {
@@ -96,6 +99,8 @@ for (const width of widths) {
           privacy: Boolean(document.querySelector('footer a[href="/privacy-policy"]')),
           terms: Boolean(document.querySelector('footer a[href="/terms-conditions"]')),
           formEmbed: Boolean(document.querySelector('iframe[src*="4JzGDJCOq5EsGZxtPaiM"]')),
+          runtimeScript: Boolean(document.querySelector('script[src="/firebase-runtime-v3.js"]')),
+          runtimeActive: document.documentElement.dataset.firebaseRuntime === 'active',
           menuVisible: menu ? getComputedStyle(menu).display !== 'none' : false,
           menuWidth: menuBox?.width || 0,
           menuHeight: menuBox?.height || 0
@@ -109,6 +114,9 @@ for (const width of widths) {
     if (value.canonical.replace(/\/$/, '') !== expectedCanonical) failures.push(`${width}px ${route}: canonical mismatch`)
     if (!value.privacy || !value.terms) failures.push(`${width}px ${route}: footer legal links missing`)
     if ((route === '/' || route === '/contact') && !value.formEmbed) failures.push(`${width}px ${route}: contact form embed missing`)
+    if (baseUrl.startsWith('https://') && (!value.runtimeScript || !value.runtimeActive)) {
+      failures.push(`${width}px ${route}: Firebase animation runtime inactive`)
+    }
     if (width <= 768 && (!value.menuVisible || value.menuWidth < 44 || value.menuHeight < 44)) {
       failures.push(`${width}px ${route}: mobile menu touch target invalid`)
     }

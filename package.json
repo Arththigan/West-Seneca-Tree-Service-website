@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build && node scripts/copy-hosting.js",
+    "build:firebase": "npm run build && node scripts/export-firebase.js",
     "start": "vinext start",
     "check": "eslint ."
   },

@@ -37,15 +37,23 @@ function TreeVisual() {
       <div className="tree-model realistic-scene">
         <div className="real-photo-card main-photo">
           <img
-            src="https://images.unsplash.com/photo-1765064519883-651c506ec70d?auto=format&fit=crop&w=1200&q=88"
+            src="https://images.unsplash.com/photo-1765064519883-651c506ec70d?auto=format&fit=crop&w=900&q=80"
             alt=""
+            width="900"
+            height="1107"
+            fetchPriority="high"
+            decoding="async"
           />
           <span className="real-photo-overlay" />
         </div>
         <div className="real-photo-card secondary-photo">
           <img
-            src="https://images.unsplash.com/photo-1754321871548-61bdbc6f1506?auto=format&fit=crop&w=800&q=86"
+            src="https://images.unsplash.com/photo-1754321871548-61bdbc6f1506?auto=format&fit=crop&w=600&q=80"
             alt=""
+            width="600"
+            height="723"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div className="scene-grid-lines" />
@@ -108,7 +116,7 @@ function App() {
             {services.map((service) => (
               <article className={`service-card ${service.tone} reveal`} key={service.n}>
                 <span className="service-number">{service.n}</span>
-                <div className="service-image"><img src={service.image} alt={service.alt} loading="lazy" /></div>
+                <div className="service-image"><img src={service.image} alt={service.alt} width="700" height="420" loading="lazy" decoding="async" /></div>
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
                 <a href={service.href} aria-label={`View ${service.title}`}>View service <ChevronRight size={18} /></a>
@@ -126,17 +134,17 @@ function App() {
           </div>
           <div className="photo-grid">
             <figure className="photo-card photo-large reveal">
-              <img src="https://images.unsplash.com/photo-1754322449005-bdc38c631682?auto=format&fit=crop&w=1400&q=82" alt="Professional arborist working in a mature tree with safety equipment" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1754322449005-bdc38c631682?auto=format&fit=crop&w=1000&q=78" alt="Professional arborist working in a mature tree with safety equipment" width="1000" height="1250" loading="lazy" decoding="async" />
               <figcaption><b>Tree pruning at height</b></figcaption>
               <i className="photo-depth-label">Harness • Climbing • Pruning</i>
             </figure>
             <figure className="photo-card reveal">
-              <img src="https://images.unsplash.com/photo-1675726060825-3c12546247f0?auto=format&fit=crop&w=1100&q=82" alt="Forestry worker using professional tree trimming equipment" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1675726060825-3c12546247f0?auto=format&fit=crop&w=800&q=78" alt="Forestry worker using professional tree trimming equipment" width="800" height="520" loading="lazy" decoding="async" />
               <figcaption><b>Careful access &amp; trimming</b></figcaption>
               <i className="photo-depth-label">Access • Teamwork</i>
             </figure>
             <figure className="photo-card reveal">
-              <img src="https://images.unsplash.com/photo-1754321902809-5c21cbc67228?auto=format&fit=crop&w=1100&q=82" alt="Arborist pruning branches while working in a tree canopy" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1754321902809-5c21cbc67228?auto=format&fit=crop&w=800&q=78" alt="Arborist pruning branches while working in a tree canopy" width="800" height="520" loading="lazy" decoding="async" />
               <figcaption><b>Professional equipment</b></figcaption>
               <i className="photo-depth-label">Equipment • Cleanup</i>
             </figure>
@@ -177,9 +185,9 @@ function App() {
               <h2>The tree can be complicated.<br /><em>The service shouldn’t be.</em></h2>
             </div>
             <div className="why-points">
-              <div><img src="https://images.pexels.com/photos/7812847/pexels-photo-7812847.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Tree worker wearing professional safety equipment" loading="lazy" /><span><b>Safety-minded</b><small>A plan built around people and property</small></span></div>
-              <div><img src="https://images.pexels.com/photos/8489862/pexels-photo-8489862.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Tree-service professional working carefully with a chainsaw" loading="lazy" /><span><b>Responsive</b><small>Clear answers when timing matters</small></span></div>
-              <div><img src="https://images.pexels.com/photos/34241750/pexels-photo-34241750.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Crew clearing tree debris after storm damage" loading="lazy" /><span><b>Clean finish</b><small>Care that continues through cleanup</small></span></div>
+              <div><img src="https://images.pexels.com/photos/7812847/pexels-photo-7812847.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Tree worker wearing professional safety equipment" width="300" height="300" loading="lazy" decoding="async" /><span><b>Safety-minded</b><small>A plan built around people and property</small></span></div>
+              <div><img src="https://images.pexels.com/photos/8489862/pexels-photo-8489862.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Tree-service professional working carefully with a chainsaw" width="300" height="300" loading="lazy" decoding="async" /><span><b>Responsive</b><small>Clear answers when timing matters</small></span></div>
+              <div><img src="https://images.pexels.com/photos/34241750/pexels-photo-34241750.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Crew clearing tree debris after storm damage" width="300" height="300" loading="lazy" decoding="async" /><span><b>Clean finish</b><small>Care that continues through cleanup</small></span></div>
             </div>
           </div>
           <div className="quote-row reveal">
@@ -248,6 +256,7 @@ function App() {
           </div>
           <div className="estimate-form embed-form reveal">
             <iframe
+              loading="lazy"
               src="https://link.kdlead.com/widget/form/4JzGDJCOq5EsGZxtPaiM"
               id="inline-4JzGDJCOq5EsGZxtPaiM"
               data-layout='{"id":"INLINE"}'
@@ -269,7 +278,7 @@ function App() {
 
       <footer>
         <div className="shell footer-top">
-          <div className="footer-brand"><img src="/west-seneca-tree-service-logo.png" alt="West Seneca Tree Service" /></div>
+          <div className="footer-brand"><img src="/west-seneca-tree-service-logo.png" alt="West Seneca Tree Service" width="1200" height="900" loading="lazy" /></div>
           <div><small>Call us</small><a href={phoneHref}>{phone}</a></div>
           <div><small>Address</small><p>44 Century Dr, Buffalo, NY 14224</p></div>
           <div className="footer-link-column"><small>Quick links</small><nav aria-label="Footer navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/our-process">Our process</a><a href="/why-us">Why us</a><a href="/contact">Contact</a></nav><span><a href="/privacy-policy">Privacy Policy</a><a href="/terms-conditions">Terms &amp; Conditions</a></span></div>

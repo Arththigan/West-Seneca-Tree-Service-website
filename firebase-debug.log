@@ -1,0 +1,781 @@
+[debug] [2026-07-28T19:33:56.981Z] ----------------------------------------------------------------------
+[debug] [2026-07-28T19:33:56.985Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ARTHTHIGAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project west-seneca-tree-service --account marketingkd27@gmail.com
+[debug] [2026-07-28T19:33:56.985Z] CLI Version:   15.24.0
+[debug] [2026-07-28T19:33:56.985Z] Platform:      win32
+[debug] [2026-07-28T19:33:56.986Z] Node Version:  v24.15.0
+[debug] [2026-07-28T19:33:56.986Z] Detected Agent: codex_cli
+[debug] [2026-07-28T19:33:56.986Z] Time:          Wed Jul 29 2026 01:03:56 GMT+0530 (India Standard Time)
+[debug] [2026-07-28T19:33:56.986Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-28T19:34:00.478Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-28T19:34:00.478Z] > authorizing via signed-in user (marketingkd27@gmail.com)
+[debug] [2026-07-28T19:34:00.478Z] [iam] checking project west-seneca-tree-service for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-07-28T19:34:00.502Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:00.503Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:00.506Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions [none]
+[debug] [2026-07-28T19:34:00.507Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions  x-goog-user-project=west-seneca-tree-service
+[debug] [2026-07-28T19:34:00.508Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-28T19:34:01.959Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions 200
+[debug] [2026-07-28T19:34:01.959Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-28T19:34:01.960Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:01.960Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:01.961Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service [none]
+[debug] [2026-07-28T19:34:02.732Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service 200
+[debug] [2026-07-28T19:34:02.733Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service {"projectId":"west-seneca-tree-service","projectNumber":"1011684863730","displayName":"West Seneca Tree Service","name":"projects/west-seneca-tree-service","resources":{"hostingSite":"west-seneca-tree-service"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_c406e813-76bd-4f81-9223-bffc0d17fd2c"}
+[info] 
+[info] === Deploying to 'west-seneca-tree-service'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-07-28T19:34:02.735Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:02.735Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:02.736Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service [none]
+[debug] [2026-07-28T19:34:03.828Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service 200
+[debug] [2026-07-28T19:34:03.828Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service {"name":"projects/west-seneca-tree-service/sites/west-seneca-tree-service","defaultUrl":"https://west-seneca-tree-service.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-07-28T19:34:03.830Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:03.830Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:03.830Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions [none]
+[debug] [2026-07-28T19:34:03.830Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-07-28T19:34:04.921Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions 200
+[debug] [2026-07-28T19:34:04.922Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions {"name":"projects/1011684863730/sites/west-seneca-tree-service/versions/9c92805ba10c728d","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[west-seneca-tree-service]: beginning deploy... 
+[info] i  hosting[west-seneca-tree-service]: found 18 files in firebase-dist 
+[debug] [2026-07-28T19:34:04.937Z] [hosting] uploading with 200 concurrency
+[debug] [2026-07-28T19:34:04.937Z] [hosting] hash cache [ZmlyZWJhc2UtZGlzdA] not populated
+[debug] [2026-07-28T19:34:04.986Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:04.986Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:04.988Z] [hosting] hash cache [ZmlyZWJhc2UtZGlzdA] stored for 18 files
+[debug] [2026-07-28T19:34:04.989Z] [hosting][hash queue][FINAL] {"max":47,"min":11,"avg":15.11111111111111,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":51}
+[debug] [2026-07-28T19:34:04.989Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/9c92805ba10c728d:populateFiles [none]
+[debug] [2026-07-28T19:34:04.989Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/9c92805ba10c728d:populateFiles {"files":{"/robots.txt":"acca48f8b07e1de4abe35ee8fdb8cecb5dbe1e4225933d8df919abf658069af9","/sitemap.xml":"6e370646acba006fbf7ae6da9740f64af628f01dc2ed35d3ba666e5db6fc604e","/index.html":"90f49f8580deccbe2ab9e895a3ad2d3035c9052ba120289b926342e39adcb008","/why-us/index.html":"bd81e0309e7e43cf6d8b5efea2612c481c21242a36bf15707ce7c1f94842c71f","/terms-conditions/index.html":"8ae5da2ed683d57e660ccb29b402adb2977cbcaf0bd7b5435f8879c736b70c54","/our-process/index.html":"57c1eab47122c5fd62713276ca19fedfbcbb5317cfe9f7805e58a090b2070a7f","/assets/index-2fqxJzhE.js":"3f2ad95441b2a23b932eb2c953f0fdd660fb96e40e885801709d01e8829c6892","/assets/index-Bbtr5Vg5.css":"5e70577eccdea973b571e15924b68f542a738db743a1f19530f4f677566ea564","/contact/index.html":"6f6984b5acd2db7608ad654dc0812b5244a6115a3ff87a1b458361b3fdf41445","/privacy-policy/index.html":"2009f2201e70bfb86a2cec613a26952cca2ff44c0e226214a78740c53426212f","/services/index.html":"590b28bf331f8a46ca5783aecc011b8d328f5d042a2fd46a63db4c20a50c4cf2","/services/tree-removal/index.html":"8cd6e572cc500d9c27d9d92401a3289445cdb9ae821ad704d4841073418b832c","/services/tree-trimming/index.html":"511811b758def901f37d49ae011e4981bc47e31556c51fbe27a7d57009b430bb","/services/stump-grinding/index.html":"9ac7fd09cd874d0af392286bec3b1b8b8c8694553b4fc8fd03268b347c2f5168","/services/storm-cleanup/index.html":"122aec548f974659e855527a4bf3e825b323df0925dc37947ec75550356c46eb","/assets/facade__virtual_vinext-rsc-entry-CrbGwtZi.js":"2ad49ade7fd446efa143e6497ddc690e254e48c3c413a0664829986f3dbdd25e","/assets/framework-CDpLNQpV.js":"1fa00bc78c6d5013ce5ddc638140b5ed844d55141d4f5a2489bb6f26edb8abe8","/west-seneca-tree-service-logo.png":"4dbcf4569f815569a5ed42201cdf564f9c2df4d257691d6c39f05a8e624277a4"}}
+[debug] [2026-07-28T19:34:05.661Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/9c92805ba10c728d:populateFiles 200
+[debug] [2026-07-28T19:34:05.661Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/9c92805ba10c728d:populateFiles {"uploadRequiredHashes":["8ae5da2ed683d57e660ccb29b402adb2977cbcaf0bd7b5435f8879c736b70c54","6f6984b5acd2db7608ad654dc0812b5244a6115a3ff87a1b458361b3fdf41445","2009f2201e70bfb86a2cec613a26952cca2ff44c0e226214a78740c53426212f","1fa00bc78c6d5013ce5ddc638140b5ed844d55141d4f5a2489bb6f26edb8abe8","90f49f8580deccbe2ab9e895a3ad2d3035c9052ba120289b926342e39adcb008","6e370646acba006fbf7ae6da9740f64af628f01dc2ed35d3ba666e5db6fc604e","122aec548f974659e855527a4bf3e825b323df0925dc37947ec75550356c46eb","3f2ad95441b2a23b932eb2c953f0fdd660fb96e40e885801709d01e8829c6892","590b28bf331f8a46ca5783aecc011b8d328f5d042a2fd46a63db4c20a50c4cf2","9ac7fd09cd874d0af392286bec3b1b8b8c8694553b4fc8fd03268b347c2f5168","57c1eab47122c5fd62713276ca19fedfbcbb5317cfe9f7805e58a090b2070a7f","8cd6e572cc500d9c27d9d92401a3289445cdb9ae821ad704d4841073418b832c","acca48f8b07e1de4abe35ee8fdb8cecb5dbe1e4225933d8df919abf658069af9","bd81e0309e7e43cf6d8b5efea2612c481c21242a36bf15707ce7c1f94842c71f","2ad49ade7fd446efa143e6497ddc690e254e48c3c413a0664829986f3dbdd25e","5e70577eccdea973b571e15924b68f542a738db743a1f19530f4f677566ea564","511811b758def901f37d49ae011e4981bc47e31556c51fbe27a7d57009b430bb"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files"}
+[debug] [2026-07-28T19:34:05.662Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.662Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.663Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.664Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.664Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.664Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.664Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.664Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.664Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.665Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.666Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.667Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.667Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.668Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.668Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.668Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.668Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.669Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.669Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.669Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.670Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.670Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.670Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.671Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.671Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:05.671Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/8ae5da2ed683d57e660ccb29b402adb2977cbcaf0bd7b5435f8879c736b70c54 [none]
+[debug] [2026-07-28T19:34:05.671Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/8ae5da2ed683d57e660ccb29b402adb2977cbcaf0bd7b5435f8879c736b70c54 [stream]
+[debug] [2026-07-28T19:34:05.672Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/6f6984b5acd2db7608ad654dc0812b5244a6115a3ff87a1b458361b3fdf41445 [none]
+[debug] [2026-07-28T19:34:05.672Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/6f6984b5acd2db7608ad654dc0812b5244a6115a3ff87a1b458361b3fdf41445 [stream]
+[debug] [2026-07-28T19:34:05.675Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/2009f2201e70bfb86a2cec613a26952cca2ff44c0e226214a78740c53426212f [none]
+[debug] [2026-07-28T19:34:05.675Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/2009f2201e70bfb86a2cec613a26952cca2ff44c0e226214a78740c53426212f [stream]
+[debug] [2026-07-28T19:34:05.676Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/1fa00bc78c6d5013ce5ddc638140b5ed844d55141d4f5a2489bb6f26edb8abe8 [none]
+[debug] [2026-07-28T19:34:05.676Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/1fa00bc78c6d5013ce5ddc638140b5ed844d55141d4f5a2489bb6f26edb8abe8 [stream]
+[debug] [2026-07-28T19:34:05.677Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/90f49f8580deccbe2ab9e895a3ad2d3035c9052ba120289b926342e39adcb008 [none]
+[debug] [2026-07-28T19:34:05.677Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/90f49f8580deccbe2ab9e895a3ad2d3035c9052ba120289b926342e39adcb008 [stream]
+[debug] [2026-07-28T19:34:05.678Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/6e370646acba006fbf7ae6da9740f64af628f01dc2ed35d3ba666e5db6fc604e [none]
+[debug] [2026-07-28T19:34:05.678Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/6e370646acba006fbf7ae6da9740f64af628f01dc2ed35d3ba666e5db6fc604e [stream]
+[debug] [2026-07-28T19:34:05.679Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/122aec548f974659e855527a4bf3e825b323df0925dc37947ec75550356c46eb [none]
+[debug] [2026-07-28T19:34:05.679Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/122aec548f974659e855527a4bf3e825b323df0925dc37947ec75550356c46eb [stream]
+[debug] [2026-07-28T19:34:05.680Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/3f2ad95441b2a23b932eb2c953f0fdd660fb96e40e885801709d01e8829c6892 [none]
+[debug] [2026-07-28T19:34:05.680Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/3f2ad95441b2a23b932eb2c953f0fdd660fb96e40e885801709d01e8829c6892 [stream]
+[debug] [2026-07-28T19:34:05.681Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/590b28bf331f8a46ca5783aecc011b8d328f5d042a2fd46a63db4c20a50c4cf2 [none]
+[debug] [2026-07-28T19:34:05.681Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/590b28bf331f8a46ca5783aecc011b8d328f5d042a2fd46a63db4c20a50c4cf2 [stream]
+[debug] [2026-07-28T19:34:05.682Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/9ac7fd09cd874d0af392286bec3b1b8b8c8694553b4fc8fd03268b347c2f5168 [none]
+[debug] [2026-07-28T19:34:05.682Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/9ac7fd09cd874d0af392286bec3b1b8b8c8694553b4fc8fd03268b347c2f5168 [stream]
+[debug] [2026-07-28T19:34:05.682Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/57c1eab47122c5fd62713276ca19fedfbcbb5317cfe9f7805e58a090b2070a7f [none]
+[debug] [2026-07-28T19:34:05.682Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/57c1eab47122c5fd62713276ca19fedfbcbb5317cfe9f7805e58a090b2070a7f [stream]
+[debug] [2026-07-28T19:34:05.682Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/8cd6e572cc500d9c27d9d92401a3289445cdb9ae821ad704d4841073418b832c [none]
+[debug] [2026-07-28T19:34:05.682Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/8cd6e572cc500d9c27d9d92401a3289445cdb9ae821ad704d4841073418b832c [stream]
+[debug] [2026-07-28T19:34:05.683Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/acca48f8b07e1de4abe35ee8fdb8cecb5dbe1e4225933d8df919abf658069af9 [none]
+[debug] [2026-07-28T19:34:05.683Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/acca48f8b07e1de4abe35ee8fdb8cecb5dbe1e4225933d8df919abf658069af9 [stream]
+[debug] [2026-07-28T19:34:05.683Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/bd81e0309e7e43cf6d8b5efea2612c481c21242a36bf15707ce7c1f94842c71f [none]
+[debug] [2026-07-28T19:34:05.683Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/bd81e0309e7e43cf6d8b5efea2612c481c21242a36bf15707ce7c1f94842c71f [stream]
+[debug] [2026-07-28T19:34:05.683Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/2ad49ade7fd446efa143e6497ddc690e254e48c3c413a0664829986f3dbdd25e [none]
+[debug] [2026-07-28T19:34:05.683Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/2ad49ade7fd446efa143e6497ddc690e254e48c3c413a0664829986f3dbdd25e [stream]
+[debug] [2026-07-28T19:34:05.684Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/5e70577eccdea973b571e15924b68f542a738db743a1f19530f4f677566ea564 [none]
+[debug] [2026-07-28T19:34:05.684Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/5e70577eccdea973b571e15924b68f542a738db743a1f19530f4f677566ea564 [stream]
+[debug] [2026-07-28T19:34:05.684Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/511811b758def901f37d49ae011e4981bc47e31556c51fbe27a7d57009b430bb [none]
+[debug] [2026-07-28T19:34:05.684Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/511811b758def901f37d49ae011e4981bc47e31556c51fbe27a7d57009b430bb [stream]
+[debug] [2026-07-28T19:34:05.693Z] [hosting][populate queue][FINAL] {"max":685,"min":685,"avg":685,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":707}
+[debug] [2026-07-28T19:34:05.693Z] [hosting] uploads queued: 17
+[info] i  hosting: uploading new files [0/17] (0%) 
+[debug] [2026-07-28T19:34:07.467Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/2009f2201e70bfb86a2cec613a26952cca2ff44c0e226214a78740c53426212f 200
+[debug] [2026-07-28T19:34:07.467Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/2009f2201e70bfb86a2cec613a26952cca2ff44c0e226214a78740c53426212f [stream]
+[debug] [2026-07-28T19:34:07.530Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/122aec548f974659e855527a4bf3e825b323df0925dc37947ec75550356c46eb 200
+[debug] [2026-07-28T19:34:07.531Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/122aec548f974659e855527a4bf3e825b323df0925dc37947ec75550356c46eb [stream]
+[debug] [2026-07-28T19:34:07.556Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/9ac7fd09cd874d0af392286bec3b1b8b8c8694553b4fc8fd03268b347c2f5168 200
+[debug] [2026-07-28T19:34:07.557Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/9ac7fd09cd874d0af392286bec3b1b8b8c8694553b4fc8fd03268b347c2f5168 [stream]
+[debug] [2026-07-28T19:34:07.610Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/acca48f8b07e1de4abe35ee8fdb8cecb5dbe1e4225933d8df919abf658069af9 200
+[debug] [2026-07-28T19:34:07.610Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/acca48f8b07e1de4abe35ee8fdb8cecb5dbe1e4225933d8df919abf658069af9 [stream]
+[debug] [2026-07-28T19:34:07.642Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/511811b758def901f37d49ae011e4981bc47e31556c51fbe27a7d57009b430bb 200
+[debug] [2026-07-28T19:34:07.642Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/511811b758def901f37d49ae011e4981bc47e31556c51fbe27a7d57009b430bb [stream]
+[debug] [2026-07-28T19:34:07.676Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/6f6984b5acd2db7608ad654dc0812b5244a6115a3ff87a1b458361b3fdf41445 200
+[debug] [2026-07-28T19:34:07.677Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/6f6984b5acd2db7608ad654dc0812b5244a6115a3ff87a1b458361b3fdf41445 [stream]
+[debug] [2026-07-28T19:34:07.748Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/8ae5da2ed683d57e660ccb29b402adb2977cbcaf0bd7b5435f8879c736b70c54 200
+[debug] [2026-07-28T19:34:07.749Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/8ae5da2ed683d57e660ccb29b402adb2977cbcaf0bd7b5435f8879c736b70c54 [stream]
+[debug] [2026-07-28T19:34:07.813Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/8cd6e572cc500d9c27d9d92401a3289445cdb9ae821ad704d4841073418b832c 200
+[debug] [2026-07-28T19:34:07.814Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/8cd6e572cc500d9c27d9d92401a3289445cdb9ae821ad704d4841073418b832c [stream]
+[debug] [2026-07-28T19:34:07.824Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/bd81e0309e7e43cf6d8b5efea2612c481c21242a36bf15707ce7c1f94842c71f 200
+[debug] [2026-07-28T19:34:07.825Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/bd81e0309e7e43cf6d8b5efea2612c481c21242a36bf15707ce7c1f94842c71f [stream]
+[debug] [2026-07-28T19:34:07.826Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/90f49f8580deccbe2ab9e895a3ad2d3035c9052ba120289b926342e39adcb008 200
+[debug] [2026-07-28T19:34:07.826Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/90f49f8580deccbe2ab9e895a3ad2d3035c9052ba120289b926342e39adcb008 [stream]
+[debug] [2026-07-28T19:34:07.831Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/6e370646acba006fbf7ae6da9740f64af628f01dc2ed35d3ba666e5db6fc604e 200
+[debug] [2026-07-28T19:34:07.831Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/6e370646acba006fbf7ae6da9740f64af628f01dc2ed35d3ba666e5db6fc604e [stream]
+[debug] [2026-07-28T19:34:07.867Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/3f2ad95441b2a23b932eb2c953f0fdd660fb96e40e885801709d01e8829c6892 200
+[debug] [2026-07-28T19:34:07.867Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/3f2ad95441b2a23b932eb2c953f0fdd660fb96e40e885801709d01e8829c6892 [stream]
+[debug] [2026-07-28T19:34:07.902Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/2ad49ade7fd446efa143e6497ddc690e254e48c3c413a0664829986f3dbdd25e 200
+[debug] [2026-07-28T19:34:07.902Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/2ad49ade7fd446efa143e6497ddc690e254e48c3c413a0664829986f3dbdd25e [stream]
+[debug] [2026-07-28T19:34:07.941Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/57c1eab47122c5fd62713276ca19fedfbcbb5317cfe9f7805e58a090b2070a7f 200
+[debug] [2026-07-28T19:34:07.941Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/57c1eab47122c5fd62713276ca19fedfbcbb5317cfe9f7805e58a090b2070a7f [stream]
+[debug] [2026-07-28T19:34:07.998Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/5e70577eccdea973b571e15924b68f542a738db743a1f19530f4f677566ea564 200
+[debug] [2026-07-28T19:34:07.998Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/5e70577eccdea973b571e15924b68f542a738db743a1f19530f4f677566ea564 [stream]
+[debug] [2026-07-28T19:34:08.041Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/590b28bf331f8a46ca5783aecc011b8d328f5d042a2fd46a63db4c20a50c4cf2 200
+[debug] [2026-07-28T19:34:08.041Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/590b28bf331f8a46ca5783aecc011b8d328f5d042a2fd46a63db4c20a50c4cf2 [stream]
+[debug] [2026-07-28T19:34:08.064Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/1fa00bc78c6d5013ce5ddc638140b5ed844d55141d4f5a2489bb6f26edb8abe8 200
+[debug] [2026-07-28T19:34:08.065Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/9c92805ba10c728d/files/1fa00bc78c6d5013ce5ddc638140b5ed844d55141d4f5a2489bb6f26edb8abe8 [stream]
+[debug] [2026-07-28T19:34:08.065Z] [hosting][upload queue][FINAL] {"max":2402,"min":1804,"avg":2119.764705882353,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":2404}
+[info] i  hosting: upload complete 
+[info] +  hosting[west-seneca-tree-service]: file upload complete 
+[debug] [2026-07-28T19:34:08.065Z] [hosting] deploy completed after 3141ms
+[debug] [2026-07-28T19:34:08.065Z] [
+  {
+    "config": {
+      "public": "firebase-dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "headers": [
+        {
+          "source": "**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=31536000,immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=0,must-revalidate"
+            }
+          ]
+        }
+      ],
+      "site": "west-seneca-tree-service"
+    },
+    "version": "projects/1011684863730/sites/west-seneca-tree-service/versions/9c92805ba10c728d"
+  }
+]
+[info] i  hosting[west-seneca-tree-service]: finalizing version... 
+[debug] [2026-07-28T19:34:08.067Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:08.067Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:08.067Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/9c92805ba10c728d updateMask=status%2Cconfig
+[debug] [2026-07-28T19:34:08.067Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/9c92805ba10c728d {"status":"FINALIZED","config":{"headers":[{"glob":"**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)","headers":{"Cache-Control":"public,max-age=31536000,immutable"}},{"glob":"**/*.html","headers":{"Cache-Control":"public,max-age=0,must-revalidate"}}],"cleanUrls":true,"trailingSlashBehavior":"REMOVE"}}
+[debug] [2026-07-28T19:34:08.845Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/9c92805ba10c728d 200
+[debug] [2026-07-28T19:34:08.845Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/9c92805ba10c728d {"name":"projects/1011684863730/sites/west-seneca-tree-service/versions/9c92805ba10c728d","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"public,max-age=31536000,immutable"},"glob":"**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)"},{"headers":{"Cache-Control":"public,max-age=0,must-revalidate"},"glob":"**/*.html"}],"cleanUrls":true,"trailingSlashBehavior":"REMOVE"},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-07-28T19:34:05.310229Z","createUser":{"email":"marketingkd27@gmail.com"},"finalizeTime":"2026-07-28T19:34:09.728355Z","finalizeUser":{"email":"marketingkd27@gmail.com"}}
+[debug] [2026-07-28T19:34:08.846Z] [hosting] finalized version for west-seneca-tree-service:[object Object]
+[info] +  hosting[west-seneca-tree-service]: version finalized 
+[info] i  hosting[west-seneca-tree-service]: releasing new version... 
+[debug] [2026-07-28T19:34:08.847Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:08.847Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:34:08.847Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases versionName=projects%2F1011684863730%2Fsites%2Fwest-seneca-tree-service%2Fversions%2F9c92805ba10c728d
+[debug] [2026-07-28T19:34:08.847Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases {}
+[debug] [2026-07-28T19:34:09.686Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases 200
+[debug] [2026-07-28T19:38:14.417Z] ----------------------------------------------------------------------
+[debug] [2026-07-28T19:38:14.422Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ARTHTHIGAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project west-seneca-tree-service --account marketingkd27@gmail.com
+[debug] [2026-07-28T19:38:14.422Z] CLI Version:   15.24.0
+[debug] [2026-07-28T19:38:14.422Z] Platform:      win32
+[debug] [2026-07-28T19:38:14.422Z] Node Version:  v24.15.0
+[debug] [2026-07-28T19:38:14.422Z] Detected Agent: codex_cli
+[debug] [2026-07-28T19:38:14.423Z] Time:          Wed Jul 29 2026 01:08:14 GMT+0530 (India Standard Time)
+[debug] [2026-07-28T19:38:14.423Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-28T19:38:17.609Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-28T19:38:17.610Z] > authorizing via signed-in user (marketingkd27@gmail.com)
+[debug] [2026-07-28T19:38:17.610Z] [iam] checking project west-seneca-tree-service for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-07-28T19:38:17.633Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:17.634Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:17.635Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions [none]
+[debug] [2026-07-28T19:38:17.636Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions  x-goog-user-project=west-seneca-tree-service
+[debug] [2026-07-28T19:38:17.636Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-28T19:38:18.956Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions 200
+[debug] [2026-07-28T19:38:18.956Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-28T19:38:18.957Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:18.957Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:18.957Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service [none]
+[debug] [2026-07-28T19:38:19.689Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service 200
+[debug] [2026-07-28T19:38:19.690Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service {"projectId":"west-seneca-tree-service","projectNumber":"1011684863730","displayName":"West Seneca Tree Service","name":"projects/west-seneca-tree-service","resources":{"hostingSite":"west-seneca-tree-service"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_c406e813-76bd-4f81-9223-bffc0d17fd2c"}
+[info] 
+[info] === Deploying to 'west-seneca-tree-service'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-07-28T19:38:19.693Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:19.693Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:19.693Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service [none]
+[debug] [2026-07-28T19:38:20.806Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service 200
+[debug] [2026-07-28T19:38:20.806Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service {"name":"projects/west-seneca-tree-service/sites/west-seneca-tree-service","defaultUrl":"https://west-seneca-tree-service.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-07-28T19:38:20.810Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:20.810Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:20.810Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions [none]
+[debug] [2026-07-28T19:38:20.810Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-07-28T19:38:21.797Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions 200
+[debug] [2026-07-28T19:38:21.798Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions {"name":"projects/1011684863730/sites/west-seneca-tree-service/versions/e6206de9fee17549","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[west-seneca-tree-service]: beginning deploy... 
+[info] i  hosting[west-seneca-tree-service]: found 19 files in firebase-dist 
+[debug] [2026-07-28T19:38:21.814Z] [hosting] uploading with 200 concurrency
+[debug] [2026-07-28T19:38:21.829Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:21.829Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:21.831Z] [hosting] hash cache [ZmlyZWJhc2UtZGlzdA] stored for 19 files
+[debug] [2026-07-28T19:38:21.831Z] [hosting][hash queue][FINAL] {"max":10,"min":0,"avg":6.7368421052631575,"active":0,"complete":19,"success":19,"errored":0,"retried":0,"total":19,"elapsed":15}
+[debug] [2026-07-28T19:38:21.831Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/e6206de9fee17549:populateFiles [none]
+[debug] [2026-07-28T19:38:21.831Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/e6206de9fee17549:populateFiles {"files":{"/west-seneca-tree-service-logo.png":"4dbcf4569f815569a5ed42201cdf564f9c2df4d257691d6c39f05a8e624277a4","/assets/index-Bbtr5Vg5.css":"5e70577eccdea973b571e15924b68f542a738db743a1f19530f4f677566ea564","/assets/index-2fqxJzhE.js":"3f2ad95441b2a23b932eb2c953f0fdd660fb96e40e885801709d01e8829c6892","/assets/framework-CDpLNQpV.js":"1fa00bc78c6d5013ce5ddc638140b5ed844d55141d4f5a2489bb6f26edb8abe8","/assets/facade__virtual_vinext-rsc-entry-CrbGwtZi.js":"2ad49ade7fd446efa143e6497ddc690e254e48c3c413a0664829986f3dbdd25e","/robots.txt":"acca48f8b07e1de4abe35ee8fdb8cecb5dbe1e4225933d8df919abf658069af9","/firebase-runtime.js":"fe3e679a0d46608d15da35df5788b44f41e4785174dd4eb27a865d1ff41fa0ff","/sitemap.xml":"936e219241e6e28ba4933df2ffe6ce7d180521af58bed56e8101e316ff8f42d4","/index.html":"5f511f421c089efe6c71f41af5aa86a45b7b898c18da57fda0a3c70b45e10b1b","/why-us/index.html":"0f4744b8f540cf7131849410b0b478676d8db6f54cabff20aca195b709c518e7","/terms-conditions/index.html":"a8cf4730775f40b7302bd96b53fdf1de2f44474bbb64eba57c5673f9b92746e9","/services/tree-trimming/index.html":"438aa31ea32ee0f0eb43ce098cf1cf5bd0a3e849df7d241afbad76c9bd11bdfd","/services/index.html":"d263074691b548e14a00d71a2d51921f0593144b47fe0b548f64a62b15295741","/services/tree-removal/index.html":"7777573e5fef9b679be029ebd5117d2a2b9ce5529b702a47fbeb6c07a68a5069","/services/stump-grinding/index.html":"8544649764c99549ec73adc098881fd80e5c0f212ba30fd6cf0d58a9d0584e9b","/our-process/index.html":"1b68a6fe9e6d060cea894a374572274bd296fb319b28856b65fe9cb7dcd8ea6c","/privacy-policy/index.html":"f24af0d9dc8e288afcd0477e6b1a2a342e2c3cdc0e7df29f34d8dccd7bc531cc","/services/storm-cleanup/index.html":"8adddfd606d0f2ee7102aba9d2b526255ccce352999ff7c4f6e53086719226e8","/contact/index.html":"1cb375f76f2b06dd7b7a340310c40623180dbc295e9c1b3ca8e2334d65363eb8"}}
+[debug] [2026-07-28T19:38:22.606Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/e6206de9fee17549:populateFiles 200
+[debug] [2026-07-28T19:38:22.607Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/e6206de9fee17549:populateFiles {"uploadRequiredHashes":["a8cf4730775f40b7302bd96b53fdf1de2f44474bbb64eba57c5673f9b92746e9","438aa31ea32ee0f0eb43ce098cf1cf5bd0a3e849df7d241afbad76c9bd11bdfd","936e219241e6e28ba4933df2ffe6ce7d180521af58bed56e8101e316ff8f42d4","d263074691b548e14a00d71a2d51921f0593144b47fe0b548f64a62b15295741","1b68a6fe9e6d060cea894a374572274bd296fb319b28856b65fe9cb7dcd8ea6c","8adddfd606d0f2ee7102aba9d2b526255ccce352999ff7c4f6e53086719226e8","1cb375f76f2b06dd7b7a340310c40623180dbc295e9c1b3ca8e2334d65363eb8","7777573e5fef9b679be029ebd5117d2a2b9ce5529b702a47fbeb6c07a68a5069","f24af0d9dc8e288afcd0477e6b1a2a342e2c3cdc0e7df29f34d8dccd7bc531cc","fe3e679a0d46608d15da35df5788b44f41e4785174dd4eb27a865d1ff41fa0ff","8544649764c99549ec73adc098881fd80e5c0f212ba30fd6cf0d58a9d0584e9b","0f4744b8f540cf7131849410b0b478676d8db6f54cabff20aca195b709c518e7","5f511f421c089efe6c71f41af5aa86a45b7b898c18da57fda0a3c70b45e10b1b"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files"}
+[debug] [2026-07-28T19:38:22.607Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.607Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.608Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.609Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.609Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.609Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.609Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.609Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.609Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.610Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.610Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.610Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.610Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.610Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.610Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.610Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.610Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:22.610Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/a8cf4730775f40b7302bd96b53fdf1de2f44474bbb64eba57c5673f9b92746e9 [none]
+[debug] [2026-07-28T19:38:22.610Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/a8cf4730775f40b7302bd96b53fdf1de2f44474bbb64eba57c5673f9b92746e9 [stream]
+[debug] [2026-07-28T19:38:22.612Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/438aa31ea32ee0f0eb43ce098cf1cf5bd0a3e849df7d241afbad76c9bd11bdfd [none]
+[debug] [2026-07-28T19:38:22.613Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/438aa31ea32ee0f0eb43ce098cf1cf5bd0a3e849df7d241afbad76c9bd11bdfd [stream]
+[debug] [2026-07-28T19:38:22.613Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/936e219241e6e28ba4933df2ffe6ce7d180521af58bed56e8101e316ff8f42d4 [none]
+[debug] [2026-07-28T19:38:22.614Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/936e219241e6e28ba4933df2ffe6ce7d180521af58bed56e8101e316ff8f42d4 [stream]
+[debug] [2026-07-28T19:38:22.614Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/d263074691b548e14a00d71a2d51921f0593144b47fe0b548f64a62b15295741 [none]
+[debug] [2026-07-28T19:38:22.614Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/d263074691b548e14a00d71a2d51921f0593144b47fe0b548f64a62b15295741 [stream]
+[debug] [2026-07-28T19:38:22.615Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/1b68a6fe9e6d060cea894a374572274bd296fb319b28856b65fe9cb7dcd8ea6c [none]
+[debug] [2026-07-28T19:38:22.615Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/1b68a6fe9e6d060cea894a374572274bd296fb319b28856b65fe9cb7dcd8ea6c [stream]
+[debug] [2026-07-28T19:38:22.615Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/8adddfd606d0f2ee7102aba9d2b526255ccce352999ff7c4f6e53086719226e8 [none]
+[debug] [2026-07-28T19:38:22.615Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/8adddfd606d0f2ee7102aba9d2b526255ccce352999ff7c4f6e53086719226e8 [stream]
+[debug] [2026-07-28T19:38:22.616Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/1cb375f76f2b06dd7b7a340310c40623180dbc295e9c1b3ca8e2334d65363eb8 [none]
+[debug] [2026-07-28T19:38:22.616Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/1cb375f76f2b06dd7b7a340310c40623180dbc295e9c1b3ca8e2334d65363eb8 [stream]
+[debug] [2026-07-28T19:38:22.616Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/7777573e5fef9b679be029ebd5117d2a2b9ce5529b702a47fbeb6c07a68a5069 [none]
+[debug] [2026-07-28T19:38:22.616Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/7777573e5fef9b679be029ebd5117d2a2b9ce5529b702a47fbeb6c07a68a5069 [stream]
+[debug] [2026-07-28T19:38:22.617Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/f24af0d9dc8e288afcd0477e6b1a2a342e2c3cdc0e7df29f34d8dccd7bc531cc [none]
+[debug] [2026-07-28T19:38:22.617Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/f24af0d9dc8e288afcd0477e6b1a2a342e2c3cdc0e7df29f34d8dccd7bc531cc [stream]
+[debug] [2026-07-28T19:38:22.617Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/fe3e679a0d46608d15da35df5788b44f41e4785174dd4eb27a865d1ff41fa0ff [none]
+[debug] [2026-07-28T19:38:22.617Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/fe3e679a0d46608d15da35df5788b44f41e4785174dd4eb27a865d1ff41fa0ff [stream]
+[debug] [2026-07-28T19:38:22.617Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/8544649764c99549ec73adc098881fd80e5c0f212ba30fd6cf0d58a9d0584e9b [none]
+[debug] [2026-07-28T19:38:22.617Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/8544649764c99549ec73adc098881fd80e5c0f212ba30fd6cf0d58a9d0584e9b [stream]
+[debug] [2026-07-28T19:38:22.618Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/0f4744b8f540cf7131849410b0b478676d8db6f54cabff20aca195b709c518e7 [none]
+[debug] [2026-07-28T19:38:22.618Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/0f4744b8f540cf7131849410b0b478676d8db6f54cabff20aca195b709c518e7 [stream]
+[debug] [2026-07-28T19:38:22.618Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/5f511f421c089efe6c71f41af5aa86a45b7b898c18da57fda0a3c70b45e10b1b [none]
+[debug] [2026-07-28T19:38:22.618Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/5f511f421c089efe6c71f41af5aa86a45b7b898c18da57fda0a3c70b45e10b1b [stream]
+[debug] [2026-07-28T19:38:22.626Z] [hosting][populate queue][FINAL] {"max":782,"min":782,"avg":782,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":798}
+[debug] [2026-07-28T19:38:22.626Z] [hosting] uploads queued: 13
+[info] i  hosting: uploading new files [0/13] (0%) 
+[debug] [2026-07-28T19:38:24.342Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/8adddfd606d0f2ee7102aba9d2b526255ccce352999ff7c4f6e53086719226e8 200
+[debug] [2026-07-28T19:38:24.343Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/8adddfd606d0f2ee7102aba9d2b526255ccce352999ff7c4f6e53086719226e8 [stream]
+[debug] [2026-07-28T19:38:24.378Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/d263074691b548e14a00d71a2d51921f0593144b47fe0b548f64a62b15295741 200
+[debug] [2026-07-28T19:38:24.379Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/d263074691b548e14a00d71a2d51921f0593144b47fe0b548f64a62b15295741 [stream]
+[debug] [2026-07-28T19:38:24.407Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/7777573e5fef9b679be029ebd5117d2a2b9ce5529b702a47fbeb6c07a68a5069 200
+[debug] [2026-07-28T19:38:24.407Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/7777573e5fef9b679be029ebd5117d2a2b9ce5529b702a47fbeb6c07a68a5069 [stream]
+[debug] [2026-07-28T19:38:24.502Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/a8cf4730775f40b7302bd96b53fdf1de2f44474bbb64eba57c5673f9b92746e9 200
+[debug] [2026-07-28T19:38:24.502Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/a8cf4730775f40b7302bd96b53fdf1de2f44474bbb64eba57c5673f9b92746e9 [stream]
+[debug] [2026-07-28T19:38:24.520Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/936e219241e6e28ba4933df2ffe6ce7d180521af58bed56e8101e316ff8f42d4 200
+[debug] [2026-07-28T19:38:24.520Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/936e219241e6e28ba4933df2ffe6ce7d180521af58bed56e8101e316ff8f42d4 [stream]
+[debug] [2026-07-28T19:38:24.546Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/1b68a6fe9e6d060cea894a374572274bd296fb319b28856b65fe9cb7dcd8ea6c 200
+[debug] [2026-07-28T19:38:24.547Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/1b68a6fe9e6d060cea894a374572274bd296fb319b28856b65fe9cb7dcd8ea6c [stream]
+[debug] [2026-07-28T19:38:24.561Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/f24af0d9dc8e288afcd0477e6b1a2a342e2c3cdc0e7df29f34d8dccd7bc531cc 200
+[debug] [2026-07-28T19:38:24.562Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/f24af0d9dc8e288afcd0477e6b1a2a342e2c3cdc0e7df29f34d8dccd7bc531cc [stream]
+[debug] [2026-07-28T19:38:24.571Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/0f4744b8f540cf7131849410b0b478676d8db6f54cabff20aca195b709c518e7 200
+[debug] [2026-07-28T19:38:24.571Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/0f4744b8f540cf7131849410b0b478676d8db6f54cabff20aca195b709c518e7 [stream]
+[debug] [2026-07-28T19:38:24.580Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/8544649764c99549ec73adc098881fd80e5c0f212ba30fd6cf0d58a9d0584e9b 200
+[debug] [2026-07-28T19:38:24.580Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/8544649764c99549ec73adc098881fd80e5c0f212ba30fd6cf0d58a9d0584e9b [stream]
+[debug] [2026-07-28T19:38:24.609Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/5f511f421c089efe6c71f41af5aa86a45b7b898c18da57fda0a3c70b45e10b1b 200
+[debug] [2026-07-28T19:38:24.610Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/5f511f421c089efe6c71f41af5aa86a45b7b898c18da57fda0a3c70b45e10b1b [stream]
+[debug] [2026-07-28T19:38:24.716Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/438aa31ea32ee0f0eb43ce098cf1cf5bd0a3e849df7d241afbad76c9bd11bdfd 200
+[debug] [2026-07-28T19:38:24.717Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/438aa31ea32ee0f0eb43ce098cf1cf5bd0a3e849df7d241afbad76c9bd11bdfd [stream]
+[debug] [2026-07-28T19:38:24.717Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/1cb375f76f2b06dd7b7a340310c40623180dbc295e9c1b3ca8e2334d65363eb8 200
+[debug] [2026-07-28T19:38:24.717Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/1cb375f76f2b06dd7b7a340310c40623180dbc295e9c1b3ca8e2334d65363eb8 [stream]
+[debug] [2026-07-28T19:38:24.949Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/fe3e679a0d46608d15da35df5788b44f41e4785174dd4eb27a865d1ff41fa0ff 200
+[debug] [2026-07-28T19:38:24.949Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/e6206de9fee17549/files/fe3e679a0d46608d15da35df5788b44f41e4785174dd4eb27a865d1ff41fa0ff [stream]
+[debug] [2026-07-28T19:38:24.950Z] [hosting][upload queue][FINAL] {"max":2339,"min":1735,"avg":1960.8461538461538,"active":0,"complete":13,"success":13,"errored":0,"retried":0,"total":13,"elapsed":2343}
+[info] i  hosting: upload complete 
+[info] +  hosting[west-seneca-tree-service]: file upload complete 
+[debug] [2026-07-28T19:38:24.950Z] [hosting] deploy completed after 3149ms
+[debug] [2026-07-28T19:38:24.950Z] [
+  {
+    "config": {
+      "public": "firebase-dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "headers": [
+        {
+          "source": "**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=31536000,immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=0,must-revalidate"
+            }
+          ]
+        }
+      ],
+      "site": "west-seneca-tree-service"
+    },
+    "version": "projects/1011684863730/sites/west-seneca-tree-service/versions/e6206de9fee17549"
+  }
+]
+[info] i  hosting[west-seneca-tree-service]: finalizing version... 
+[debug] [2026-07-28T19:38:24.952Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:24.952Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:24.952Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/e6206de9fee17549 updateMask=status%2Cconfig
+[debug] [2026-07-28T19:38:24.952Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/e6206de9fee17549 {"status":"FINALIZED","config":{"headers":[{"glob":"**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)","headers":{"Cache-Control":"public,max-age=31536000,immutable"}},{"glob":"**/*.html","headers":{"Cache-Control":"public,max-age=0,must-revalidate"}}],"cleanUrls":true,"trailingSlashBehavior":"REMOVE"}}
+[debug] [2026-07-28T19:38:25.691Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/e6206de9fee17549 200
+[debug] [2026-07-28T19:38:25.691Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/e6206de9fee17549 {"name":"projects/1011684863730/sites/west-seneca-tree-service/versions/e6206de9fee17549","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"public,max-age=31536000,immutable"},"glob":"**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)"},{"headers":{"Cache-Control":"public,max-age=0,must-revalidate"},"glob":"**/*.html"}],"cleanUrls":true,"trailingSlashBehavior":"REMOVE"},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-07-28T19:38:22.223660Z","createUser":{"email":"marketingkd27@gmail.com"},"finalizeTime":"2026-07-28T19:38:26.544531Z","finalizeUser":{"email":"marketingkd27@gmail.com"}}
+[debug] [2026-07-28T19:38:25.691Z] [hosting] finalized version for west-seneca-tree-service:[object Object]
+[info] +  hosting[west-seneca-tree-service]: version finalized 
+[info] i  hosting[west-seneca-tree-service]: releasing new version... 
+[debug] [2026-07-28T19:38:25.692Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:25.692Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:38:25.692Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases versionName=projects%2F1011684863730%2Fsites%2Fwest-seneca-tree-service%2Fversions%2Fe6206de9fee17549
+[debug] [2026-07-28T19:38:25.692Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases {}
+[debug] [2026-07-28T19:38:26.462Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases 200
+[debug] [2026-07-28T19:42:03.660Z] ----------------------------------------------------------------------
+[debug] [2026-07-28T19:42:03.663Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ARTHTHIGAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project west-seneca-tree-service --account marketingkd27@gmail.com
+[debug] [2026-07-28T19:42:03.664Z] CLI Version:   15.24.0
+[debug] [2026-07-28T19:42:03.664Z] Platform:      win32
+[debug] [2026-07-28T19:42:03.664Z] Node Version:  v24.15.0
+[debug] [2026-07-28T19:42:03.665Z] Detected Agent: codex_cli
+[debug] [2026-07-28T19:42:03.665Z] Time:          Wed Jul 29 2026 01:12:03 GMT+0530 (India Standard Time)
+[debug] [2026-07-28T19:42:03.665Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-28T19:42:07.287Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-28T19:42:07.288Z] > authorizing via signed-in user (marketingkd27@gmail.com)
+[debug] [2026-07-28T19:42:07.289Z] [iam] checking project west-seneca-tree-service for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-07-28T19:42:07.311Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:07.311Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:07.313Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions [none]
+[debug] [2026-07-28T19:42:07.314Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions  x-goog-user-project=west-seneca-tree-service
+[debug] [2026-07-28T19:42:07.315Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-28T19:42:08.721Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions 200
+[debug] [2026-07-28T19:42:08.721Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-28T19:42:08.722Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:08.722Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:08.722Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service [none]
+[debug] [2026-07-28T19:42:09.630Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service 200
+[debug] [2026-07-28T19:42:09.630Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service {"projectId":"west-seneca-tree-service","projectNumber":"1011684863730","displayName":"West Seneca Tree Service","name":"projects/west-seneca-tree-service","resources":{"hostingSite":"west-seneca-tree-service"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_c406e813-76bd-4f81-9223-bffc0d17fd2c"}
+[info] 
+[info] === Deploying to 'west-seneca-tree-service'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-07-28T19:42:09.635Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:09.636Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:09.636Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service [none]
+[debug] [2026-07-28T19:42:10.852Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service 200
+[debug] [2026-07-28T19:42:10.852Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service {"name":"projects/west-seneca-tree-service/sites/west-seneca-tree-service","defaultUrl":"https://west-seneca-tree-service.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-07-28T19:42:10.854Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:10.855Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:10.855Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions [none]
+[debug] [2026-07-28T19:42:10.855Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-07-28T19:42:11.875Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions 200
+[debug] [2026-07-28T19:42:11.876Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions {"name":"projects/1011684863730/sites/west-seneca-tree-service/versions/edb6c16af70aadd2","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[west-seneca-tree-service]: beginning deploy... 
+[info] i  hosting[west-seneca-tree-service]: found 19 files in firebase-dist 
+[debug] [2026-07-28T19:42:11.899Z] [hosting] uploading with 200 concurrency
+[debug] [2026-07-28T19:42:11.925Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:11.925Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:11.928Z] [hosting] hash cache [ZmlyZWJhc2UtZGlzdA] stored for 19 files
+[debug] [2026-07-28T19:42:11.928Z] [hosting][hash queue][FINAL] {"max":19,"min":0,"avg":12.368421052631579,"active":0,"complete":19,"success":19,"errored":0,"retried":0,"total":19,"elapsed":26}
+[debug] [2026-07-28T19:42:11.929Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/edb6c16af70aadd2:populateFiles [none]
+[debug] [2026-07-28T19:42:11.929Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/edb6c16af70aadd2:populateFiles {"files":{"/west-seneca-tree-service-logo.png":"4dbcf4569f815569a5ed42201cdf564f9c2df4d257691d6c39f05a8e624277a4","/assets/index-Bbtr5Vg5.css":"5e70577eccdea973b571e15924b68f542a738db743a1f19530f4f677566ea564","/assets/index-2fqxJzhE.js":"3f2ad95441b2a23b932eb2c953f0fdd660fb96e40e885801709d01e8829c6892","/assets/framework-CDpLNQpV.js":"1fa00bc78c6d5013ce5ddc638140b5ed844d55141d4f5a2489bb6f26edb8abe8","/assets/facade__virtual_vinext-rsc-entry-CrbGwtZi.js":"2ad49ade7fd446efa143e6497ddc690e254e48c3c413a0664829986f3dbdd25e","/robots.txt":"acca48f8b07e1de4abe35ee8fdb8cecb5dbe1e4225933d8df919abf658069af9","/sitemap.xml":"ca08a06b65040f1fecad99410ec54e29ac70b8604e0b1c391ca0ba5d4d4202ef","/firebase-runtime-v2.js":"20d62b6e2a8eba097b66fd5f7534a99f3a8253e6f292acc219a7991b8ac53c83","/index.html":"d974fb76b893c97af4ed6d23e1df879c19bd6c3eb4c25c16f64f8a1e8f065292","/why-us/index.html":"0e586df7ec05ca3f750b9a4ea9bb5ab90f0ce0bbf86a250fcef73f004a6986ca","/terms-conditions/index.html":"ae8d782ce33e70ed3e4222111733c9f849f83c4e1a9609a9a4462aaab6aea525","/services/index.html":"d74d9378d57f8b31d99d2f8c28023c30ebe4c5fc62982367d7c60ce9d408e686","/services/tree-trimming/index.html":"137ce0f8c3b32d238baed2094e2833f63bd24dd9033511ea2e0eb47e0991558c","/services/tree-removal/index.html":"da135c97d11c66b86905301509f175f0d057586cd7bfd0ef1c834ace9e2fc731","/our-process/index.html":"456c5152d3ec5f66d8feccd5405d6947003b7183508aef8f1d62dfc4dfbf35f7","/services/storm-cleanup/index.html":"4750a3fe1dc7febbfc6091c8a392c1efc6dcd09ce30347ca59040e05a0fcda97","/services/stump-grinding/index.html":"1cccef915f2b6af19a7a0c1e70678bd9ca38fa9eee45384dfb23b46d4d8f5b3c","/contact/index.html":"3ffc30572814c220aafdc39091e739f5b8f8a01991564fb6f3de6e0053633e50","/privacy-policy/index.html":"23af8a341a27025153e9ea3fc6616f22cd93d986a2583159d0df8ead4a21ec1b"}}
+[debug] [2026-07-28T19:42:12.843Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/edb6c16af70aadd2:populateFiles 200
+[debug] [2026-07-28T19:42:12.843Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/edb6c16af70aadd2:populateFiles {"uploadRequiredHashes":["456c5152d3ec5f66d8feccd5405d6947003b7183508aef8f1d62dfc4dfbf35f7","20d62b6e2a8eba097b66fd5f7534a99f3a8253e6f292acc219a7991b8ac53c83","d74d9378d57f8b31d99d2f8c28023c30ebe4c5fc62982367d7c60ce9d408e686","1cccef915f2b6af19a7a0c1e70678bd9ca38fa9eee45384dfb23b46d4d8f5b3c","137ce0f8c3b32d238baed2094e2833f63bd24dd9033511ea2e0eb47e0991558c","da135c97d11c66b86905301509f175f0d057586cd7bfd0ef1c834ace9e2fc731","ae8d782ce33e70ed3e4222111733c9f849f83c4e1a9609a9a4462aaab6aea525","ca08a06b65040f1fecad99410ec54e29ac70b8604e0b1c391ca0ba5d4d4202ef","23af8a341a27025153e9ea3fc6616f22cd93d986a2583159d0df8ead4a21ec1b","0e586df7ec05ca3f750b9a4ea9bb5ab90f0ce0bbf86a250fcef73f004a6986ca","3ffc30572814c220aafdc39091e739f5b8f8a01991564fb6f3de6e0053633e50","4750a3fe1dc7febbfc6091c8a392c1efc6dcd09ce30347ca59040e05a0fcda97","d974fb76b893c97af4ed6d23e1df879c19bd6c3eb4c25c16f64f8a1e8f065292"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files"}
+[debug] [2026-07-28T19:42:12.844Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.844Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.844Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.845Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.845Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.845Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.845Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.845Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.846Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.846Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.846Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.846Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.846Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.847Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.847Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.847Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.847Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.847Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.847Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.848Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.848Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.848Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.848Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.848Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.849Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.849Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:12.849Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/456c5152d3ec5f66d8feccd5405d6947003b7183508aef8f1d62dfc4dfbf35f7 [none]
+[debug] [2026-07-28T19:42:12.849Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/456c5152d3ec5f66d8feccd5405d6947003b7183508aef8f1d62dfc4dfbf35f7 [stream]
+[debug] [2026-07-28T19:42:12.851Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/20d62b6e2a8eba097b66fd5f7534a99f3a8253e6f292acc219a7991b8ac53c83 [none]
+[debug] [2026-07-28T19:42:12.851Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/20d62b6e2a8eba097b66fd5f7534a99f3a8253e6f292acc219a7991b8ac53c83 [stream]
+[debug] [2026-07-28T19:42:12.853Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/d74d9378d57f8b31d99d2f8c28023c30ebe4c5fc62982367d7c60ce9d408e686 [none]
+[debug] [2026-07-28T19:42:12.853Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/d74d9378d57f8b31d99d2f8c28023c30ebe4c5fc62982367d7c60ce9d408e686 [stream]
+[debug] [2026-07-28T19:42:12.854Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/1cccef915f2b6af19a7a0c1e70678bd9ca38fa9eee45384dfb23b46d4d8f5b3c [none]
+[debug] [2026-07-28T19:42:12.854Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/1cccef915f2b6af19a7a0c1e70678bd9ca38fa9eee45384dfb23b46d4d8f5b3c [stream]
+[debug] [2026-07-28T19:42:12.855Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/137ce0f8c3b32d238baed2094e2833f63bd24dd9033511ea2e0eb47e0991558c [none]
+[debug] [2026-07-28T19:42:12.856Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/137ce0f8c3b32d238baed2094e2833f63bd24dd9033511ea2e0eb47e0991558c [stream]
+[debug] [2026-07-28T19:42:12.857Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/da135c97d11c66b86905301509f175f0d057586cd7bfd0ef1c834ace9e2fc731 [none]
+[debug] [2026-07-28T19:42:12.857Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/da135c97d11c66b86905301509f175f0d057586cd7bfd0ef1c834ace9e2fc731 [stream]
+[debug] [2026-07-28T19:42:12.858Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/ae8d782ce33e70ed3e4222111733c9f849f83c4e1a9609a9a4462aaab6aea525 [none]
+[debug] [2026-07-28T19:42:12.858Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/ae8d782ce33e70ed3e4222111733c9f849f83c4e1a9609a9a4462aaab6aea525 [stream]
+[debug] [2026-07-28T19:42:12.859Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/ca08a06b65040f1fecad99410ec54e29ac70b8604e0b1c391ca0ba5d4d4202ef [none]
+[debug] [2026-07-28T19:42:12.859Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/ca08a06b65040f1fecad99410ec54e29ac70b8604e0b1c391ca0ba5d4d4202ef [stream]
+[debug] [2026-07-28T19:42:12.860Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/23af8a341a27025153e9ea3fc6616f22cd93d986a2583159d0df8ead4a21ec1b [none]
+[debug] [2026-07-28T19:42:12.860Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/23af8a341a27025153e9ea3fc6616f22cd93d986a2583159d0df8ead4a21ec1b [stream]
+[debug] [2026-07-28T19:42:12.861Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/0e586df7ec05ca3f750b9a4ea9bb5ab90f0ce0bbf86a250fcef73f004a6986ca [none]
+[debug] [2026-07-28T19:42:12.861Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/0e586df7ec05ca3f750b9a4ea9bb5ab90f0ce0bbf86a250fcef73f004a6986ca [stream]
+[debug] [2026-07-28T19:42:12.861Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/3ffc30572814c220aafdc39091e739f5b8f8a01991564fb6f3de6e0053633e50 [none]
+[debug] [2026-07-28T19:42:12.861Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/3ffc30572814c220aafdc39091e739f5b8f8a01991564fb6f3de6e0053633e50 [stream]
+[debug] [2026-07-28T19:42:12.862Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/4750a3fe1dc7febbfc6091c8a392c1efc6dcd09ce30347ca59040e05a0fcda97 [none]
+[debug] [2026-07-28T19:42:12.862Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/4750a3fe1dc7febbfc6091c8a392c1efc6dcd09ce30347ca59040e05a0fcda97 [stream]
+[debug] [2026-07-28T19:42:12.862Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/d974fb76b893c97af4ed6d23e1df879c19bd6c3eb4c25c16f64f8a1e8f065292 [none]
+[debug] [2026-07-28T19:42:12.863Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/d974fb76b893c97af4ed6d23e1df879c19bd6c3eb4c25c16f64f8a1e8f065292 [stream]
+[debug] [2026-07-28T19:42:12.876Z] [hosting][populate queue][FINAL] {"max":924,"min":924,"avg":924,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":951}
+[debug] [2026-07-28T19:42:12.877Z] [hosting] uploads queued: 13
+[info] i  hosting: uploading new files [0/13] (0%) 
+[debug] [2026-07-28T19:42:14.768Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/3ffc30572814c220aafdc39091e739f5b8f8a01991564fb6f3de6e0053633e50 200
+[debug] [2026-07-28T19:42:14.768Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/3ffc30572814c220aafdc39091e739f5b8f8a01991564fb6f3de6e0053633e50 [stream]
+[debug] [2026-07-28T19:42:14.815Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/ae8d782ce33e70ed3e4222111733c9f849f83c4e1a9609a9a4462aaab6aea525 200
+[debug] [2026-07-28T19:42:14.815Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/ae8d782ce33e70ed3e4222111733c9f849f83c4e1a9609a9a4462aaab6aea525 [stream]
+[debug] [2026-07-28T19:42:14.827Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/d74d9378d57f8b31d99d2f8c28023c30ebe4c5fc62982367d7c60ce9d408e686 200
+[debug] [2026-07-28T19:42:14.827Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/d74d9378d57f8b31d99d2f8c28023c30ebe4c5fc62982367d7c60ce9d408e686 [stream]
+[debug] [2026-07-28T19:42:14.855Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/456c5152d3ec5f66d8feccd5405d6947003b7183508aef8f1d62dfc4dfbf35f7 200
+[debug] [2026-07-28T19:42:14.855Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/456c5152d3ec5f66d8feccd5405d6947003b7183508aef8f1d62dfc4dfbf35f7 [stream]
+[debug] [2026-07-28T19:42:14.872Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/137ce0f8c3b32d238baed2094e2833f63bd24dd9033511ea2e0eb47e0991558c 200
+[debug] [2026-07-28T19:42:14.872Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/137ce0f8c3b32d238baed2094e2833f63bd24dd9033511ea2e0eb47e0991558c [stream]
+[debug] [2026-07-28T19:42:14.905Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/20d62b6e2a8eba097b66fd5f7534a99f3a8253e6f292acc219a7991b8ac53c83 200
+[debug] [2026-07-28T19:42:14.905Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/20d62b6e2a8eba097b66fd5f7534a99f3a8253e6f292acc219a7991b8ac53c83 [stream]
+[debug] [2026-07-28T19:42:14.925Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/23af8a341a27025153e9ea3fc6616f22cd93d986a2583159d0df8ead4a21ec1b 200
+[debug] [2026-07-28T19:42:14.926Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/23af8a341a27025153e9ea3fc6616f22cd93d986a2583159d0df8ead4a21ec1b [stream]
+[debug] [2026-07-28T19:42:14.927Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/d974fb76b893c97af4ed6d23e1df879c19bd6c3eb4c25c16f64f8a1e8f065292 200
+[debug] [2026-07-28T19:42:14.927Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/d974fb76b893c97af4ed6d23e1df879c19bd6c3eb4c25c16f64f8a1e8f065292 [stream]
+[debug] [2026-07-28T19:42:14.995Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/0e586df7ec05ca3f750b9a4ea9bb5ab90f0ce0bbf86a250fcef73f004a6986ca 200
+[debug] [2026-07-28T19:42:14.996Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/0e586df7ec05ca3f750b9a4ea9bb5ab90f0ce0bbf86a250fcef73f004a6986ca [stream]
+[debug] [2026-07-28T19:42:14.997Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/4750a3fe1dc7febbfc6091c8a392c1efc6dcd09ce30347ca59040e05a0fcda97 200
+[debug] [2026-07-28T19:42:14.997Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/4750a3fe1dc7febbfc6091c8a392c1efc6dcd09ce30347ca59040e05a0fcda97 [stream]
+[debug] [2026-07-28T19:42:15.026Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/1cccef915f2b6af19a7a0c1e70678bd9ca38fa9eee45384dfb23b46d4d8f5b3c 200
+[debug] [2026-07-28T19:42:15.026Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/1cccef915f2b6af19a7a0c1e70678bd9ca38fa9eee45384dfb23b46d4d8f5b3c [stream]
+[debug] [2026-07-28T19:42:15.028Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/da135c97d11c66b86905301509f175f0d057586cd7bfd0ef1c834ace9e2fc731 200
+[debug] [2026-07-28T19:42:15.028Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/da135c97d11c66b86905301509f175f0d057586cd7bfd0ef1c834ace9e2fc731 [stream]
+[debug] [2026-07-28T19:42:15.153Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/ca08a06b65040f1fecad99410ec54e29ac70b8604e0b1c391ca0ba5d4d4202ef 200
+[debug] [2026-07-28T19:42:15.153Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/edb6c16af70aadd2/files/ca08a06b65040f1fecad99410ec54e29ac70b8604e0b1c391ca0ba5d4d4202ef [stream]
+[debug] [2026-07-28T19:42:15.153Z] [hosting][upload queue][FINAL] {"max":2306,"min":1921,"avg":2084.3076923076924,"active":0,"complete":13,"success":13,"errored":0,"retried":0,"total":13,"elapsed":2310}
+[info] i  hosting: upload complete 
+[info] +  hosting[west-seneca-tree-service]: file upload complete 
+[debug] [2026-07-28T19:42:15.154Z] [hosting] deploy completed after 3274ms
+[debug] [2026-07-28T19:42:15.154Z] [
+  {
+    "config": {
+      "public": "firebase-dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "headers": [
+        {
+          "source": "**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=31536000,immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=0,must-revalidate"
+            }
+          ]
+        }
+      ],
+      "site": "west-seneca-tree-service"
+    },
+    "version": "projects/1011684863730/sites/west-seneca-tree-service/versions/edb6c16af70aadd2"
+  }
+]
+[info] i  hosting[west-seneca-tree-service]: finalizing version... 
+[debug] [2026-07-28T19:42:15.157Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:15.157Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:15.158Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/edb6c16af70aadd2 updateMask=status%2Cconfig
+[debug] [2026-07-28T19:42:15.158Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/edb6c16af70aadd2 {"status":"FINALIZED","config":{"headers":[{"glob":"**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)","headers":{"Cache-Control":"public,max-age=31536000,immutable"}},{"glob":"**/*.html","headers":{"Cache-Control":"public,max-age=0,must-revalidate"}}],"cleanUrls":true,"trailingSlashBehavior":"REMOVE"}}
+[debug] [2026-07-28T19:42:16.000Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/edb6c16af70aadd2 200
+[debug] [2026-07-28T19:42:16.000Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/edb6c16af70aadd2 {"name":"projects/1011684863730/sites/west-seneca-tree-service/versions/edb6c16af70aadd2","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"public,max-age=31536000,immutable"},"glob":"**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)"},{"headers":{"Cache-Control":"public,max-age=0,must-revalidate"},"glob":"**/*.html"}],"cleanUrls":true,"trailingSlashBehavior":"REMOVE"},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-07-28T19:42:12.248970Z","createUser":{"email":"marketingkd27@gmail.com"},"finalizeTime":"2026-07-28T19:42:16.863100Z","finalizeUser":{"email":"marketingkd27@gmail.com"}}
+[debug] [2026-07-28T19:42:16.001Z] [hosting] finalized version for west-seneca-tree-service:[object Object]
+[info] +  hosting[west-seneca-tree-service]: version finalized 
+[info] i  hosting[west-seneca-tree-service]: releasing new version... 
+[debug] [2026-07-28T19:42:16.001Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:16.001Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:42:16.002Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases versionName=projects%2F1011684863730%2Fsites%2Fwest-seneca-tree-service%2Fversions%2Fedb6c16af70aadd2
+[debug] [2026-07-28T19:42:16.002Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases {}
+[debug] [2026-07-28T19:42:16.889Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases 200
+[debug] [2026-07-28T19:55:53.914Z] ----------------------------------------------------------------------
+[debug] [2026-07-28T19:55:53.918Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ARTHTHIGAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project west-seneca-tree-service --account marketingkd27@gmail.com
+[debug] [2026-07-28T19:55:53.919Z] CLI Version:   15.24.0
+[debug] [2026-07-28T19:55:53.919Z] Platform:      win32
+[debug] [2026-07-28T19:55:53.920Z] Node Version:  v24.15.0
+[debug] [2026-07-28T19:55:53.920Z] Detected Agent: codex_cli
+[debug] [2026-07-28T19:55:53.920Z] Time:          Wed Jul 29 2026 01:25:53 GMT+0530 (India Standard Time)
+[debug] [2026-07-28T19:55:53.920Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-28T19:55:57.600Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-28T19:55:57.601Z] > authorizing via signed-in user (marketingkd27@gmail.com)
+[debug] [2026-07-28T19:55:57.601Z] [iam] checking project west-seneca-tree-service for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-07-28T19:55:57.627Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:55:57.627Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:55:57.630Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions [none]
+[debug] [2026-07-28T19:55:57.630Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions  x-goog-user-project=west-seneca-tree-service
+[debug] [2026-07-28T19:55:57.631Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-28T19:55:58.135Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions 200
+[debug] [2026-07-28T19:55:58.136Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/west-seneca-tree-service:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-28T19:55:58.137Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:55:58.137Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:55:58.137Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service [none]
+[debug] [2026-07-28T19:55:58.885Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service 200
+[debug] [2026-07-28T19:55:58.886Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/west-seneca-tree-service {"projectId":"west-seneca-tree-service","projectNumber":"1011684863730","displayName":"West Seneca Tree Service","name":"projects/west-seneca-tree-service","resources":{"hostingSite":"west-seneca-tree-service"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_c406e813-76bd-4f81-9223-bffc0d17fd2c"}
+[info] 
+[info] === Deploying to 'west-seneca-tree-service'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-07-28T19:55:58.892Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:55:58.893Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:55:58.893Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service [none]
+[debug] [2026-07-28T19:56:00.089Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service 200
+[debug] [2026-07-28T19:56:00.090Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/west-seneca-tree-service/sites/west-seneca-tree-service {"name":"projects/west-seneca-tree-service/sites/west-seneca-tree-service","defaultUrl":"https://west-seneca-tree-service.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-07-28T19:56:00.092Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:00.093Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:00.093Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions [none]
+[debug] [2026-07-28T19:56:00.093Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-07-28T19:56:01.263Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions 200
+[debug] [2026-07-28T19:56:01.263Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions {"name":"projects/1011684863730/sites/west-seneca-tree-service/versions/637068e357a8fe6b","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[west-seneca-tree-service]: beginning deploy... 
+[info] i  hosting[west-seneca-tree-service]: found 19 files in firebase-dist 
+[debug] [2026-07-28T19:56:01.289Z] [hosting] uploading with 200 concurrency
+[debug] [2026-07-28T19:56:01.328Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:01.329Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:01.332Z] [hosting] hash cache [ZmlyZWJhc2UtZGlzdA] stored for 19 files
+[debug] [2026-07-28T19:56:01.332Z] [hosting][hash queue][FINAL] {"max":31,"min":5,"avg":18.63157894736842,"active":0,"complete":19,"success":19,"errored":0,"retried":0,"total":19,"elapsed":40}
+[debug] [2026-07-28T19:56:01.333Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/637068e357a8fe6b:populateFiles [none]
+[debug] [2026-07-28T19:56:01.333Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/637068e357a8fe6b:populateFiles {"files":{"/west-seneca-tree-service-logo.png":"4dbcf4569f815569a5ed42201cdf564f9c2df4d257691d6c39f05a8e624277a4","/robots.txt":"acca48f8b07e1de4abe35ee8fdb8cecb5dbe1e4225933d8df919abf658069af9","/firebase-runtime-v3.js":"20d62b6e2a8eba097b66fd5f7534a99f3a8253e6f292acc219a7991b8ac53c83","/terms-conditions/index.html":"5c0591a0725ad202634227072ea4d6c45c1c3a55671d5d45d1be55826ed0198a","/sitemap.xml":"349fc8880bdd93bb55e45f75f47718e97f264ac053181be36d9dc61fee1566e4","/why-us/index.html":"ccc4f7463949966989c451f82529162aa648b2066b878f8d072b58faf0f1cf24","/services/tree-trimming/index.html":"2a5a2a3797fc934e113f407f05347ccfcea018a61a879db1891e6f5520d59ca6","/services/index.html":"a04f2ced6e57982a044e77f8306e60bf3c5762c4adf39608036a1f47ed66a5ea","/services/tree-removal/index.html":"081f13995c118665a5b083d1ca069ebdca9d494ac5180cda80bfa9662d888ef7","/services/storm-cleanup/index.html":"adb688dd54d3ef5625458c6785299651d42ddf67f63823c7ea712a7732060213","/privacy-policy/index.html":"c090927d56ff8931bb5b5c0d9857ecfaed84df923359ce07e61ba11fcca8debc","/services/stump-grinding/index.html":"06d4bfe03c972d4679040fcfd1221157802da6bf9389c536003d81323687e949","/our-process/index.html":"7174489fb9243d25bf9e27dc2e2439eab83a27f46a16e6acc89f2a6eaa6d6418","/contact/index.html":"ab658aad515b715d212ae629776f8a098f452f315ce58e4d4889de214cdca49d","/assets/index-BBr_hz78.css":"7c7fa2a532e28901dc474a878f86131e9c5dffd0a2eb8c3aed4b3144cda71a3e","/index.html":"8d757df394038c5a5594f4c15d9f5e496639b44b8b1afba499f13e58c92962a3","/assets/index-C0bce9ru.js":"b9f4ee25ab5d64e64862311af3e14d6dc898abde325c181db8a1df4254ded50d","/assets/facade__virtual_vinext-rsc-entry-CQ7drA9q.js":"6584c31b7e034975175b32bc61eb991b248b97e24769db181c74d4ee4076fcb7","/assets/framework-CDpLNQpV.js":"1fa00bc78c6d5013ce5ddc638140b5ed844d55141d4f5a2489bb6f26edb8abe8"}}
+[debug] [2026-07-28T19:56:02.225Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/637068e357a8fe6b:populateFiles 200
+[debug] [2026-07-28T19:56:02.226Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1011684863730/sites/west-seneca-tree-service/versions/637068e357a8fe6b:populateFiles {"uploadRequiredHashes":["8d757df394038c5a5594f4c15d9f5e496639b44b8b1afba499f13e58c92962a3","5c0591a0725ad202634227072ea4d6c45c1c3a55671d5d45d1be55826ed0198a","06d4bfe03c972d4679040fcfd1221157802da6bf9389c536003d81323687e949","b9f4ee25ab5d64e64862311af3e14d6dc898abde325c181db8a1df4254ded50d","2a5a2a3797fc934e113f407f05347ccfcea018a61a879db1891e6f5520d59ca6","349fc8880bdd93bb55e45f75f47718e97f264ac053181be36d9dc61fee1566e4","ab658aad515b715d212ae629776f8a098f452f315ce58e4d4889de214cdca49d","a04f2ced6e57982a044e77f8306e60bf3c5762c4adf39608036a1f47ed66a5ea","6584c31b7e034975175b32bc61eb991b248b97e24769db181c74d4ee4076fcb7","ccc4f7463949966989c451f82529162aa648b2066b878f8d072b58faf0f1cf24","c090927d56ff8931bb5b5c0d9857ecfaed84df923359ce07e61ba11fcca8debc","7174489fb9243d25bf9e27dc2e2439eab83a27f46a16e6acc89f2a6eaa6d6418","7c7fa2a532e28901dc474a878f86131e9c5dffd0a2eb8c3aed4b3144cda71a3e","adb688dd54d3ef5625458c6785299651d42ddf67f63823c7ea712a7732060213","081f13995c118665a5b083d1ca069ebdca9d494ac5180cda80bfa9662d888ef7"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files"}
+[debug] [2026-07-28T19:56:02.227Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.227Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.227Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.227Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.228Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.228Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.229Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.229Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.230Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.230Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.231Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.231Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.231Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.231Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.232Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.232Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.232Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.232Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.232Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.233Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.233Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.233Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.233Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.233Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.233Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.233Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.234Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.234Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.234Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.234Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:02.235Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/8d757df394038c5a5594f4c15d9f5e496639b44b8b1afba499f13e58c92962a3 [none]
+[debug] [2026-07-28T19:56:02.235Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/8d757df394038c5a5594f4c15d9f5e496639b44b8b1afba499f13e58c92962a3 [stream]
+[debug] [2026-07-28T19:56:02.236Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/5c0591a0725ad202634227072ea4d6c45c1c3a55671d5d45d1be55826ed0198a [none]
+[debug] [2026-07-28T19:56:02.237Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/5c0591a0725ad202634227072ea4d6c45c1c3a55671d5d45d1be55826ed0198a [stream]
+[debug] [2026-07-28T19:56:02.238Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/06d4bfe03c972d4679040fcfd1221157802da6bf9389c536003d81323687e949 [none]
+[debug] [2026-07-28T19:56:02.238Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/06d4bfe03c972d4679040fcfd1221157802da6bf9389c536003d81323687e949 [stream]
+[debug] [2026-07-28T19:56:02.239Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/b9f4ee25ab5d64e64862311af3e14d6dc898abde325c181db8a1df4254ded50d [none]
+[debug] [2026-07-28T19:56:02.239Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/b9f4ee25ab5d64e64862311af3e14d6dc898abde325c181db8a1df4254ded50d [stream]
+[debug] [2026-07-28T19:56:02.241Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/2a5a2a3797fc934e113f407f05347ccfcea018a61a879db1891e6f5520d59ca6 [none]
+[debug] [2026-07-28T19:56:02.241Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/2a5a2a3797fc934e113f407f05347ccfcea018a61a879db1891e6f5520d59ca6 [stream]
+[debug] [2026-07-28T19:56:02.242Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/349fc8880bdd93bb55e45f75f47718e97f264ac053181be36d9dc61fee1566e4 [none]
+[debug] [2026-07-28T19:56:02.243Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/349fc8880bdd93bb55e45f75f47718e97f264ac053181be36d9dc61fee1566e4 [stream]
+[debug] [2026-07-28T19:56:02.244Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/ab658aad515b715d212ae629776f8a098f452f315ce58e4d4889de214cdca49d [none]
+[debug] [2026-07-28T19:56:02.244Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/ab658aad515b715d212ae629776f8a098f452f315ce58e4d4889de214cdca49d [stream]
+[debug] [2026-07-28T19:56:02.245Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/a04f2ced6e57982a044e77f8306e60bf3c5762c4adf39608036a1f47ed66a5ea [none]
+[debug] [2026-07-28T19:56:02.245Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/a04f2ced6e57982a044e77f8306e60bf3c5762c4adf39608036a1f47ed66a5ea [stream]
+[debug] [2026-07-28T19:56:02.246Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/6584c31b7e034975175b32bc61eb991b248b97e24769db181c74d4ee4076fcb7 [none]
+[debug] [2026-07-28T19:56:02.246Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/6584c31b7e034975175b32bc61eb991b248b97e24769db181c74d4ee4076fcb7 [stream]
+[debug] [2026-07-28T19:56:02.246Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/ccc4f7463949966989c451f82529162aa648b2066b878f8d072b58faf0f1cf24 [none]
+[debug] [2026-07-28T19:56:02.247Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/ccc4f7463949966989c451f82529162aa648b2066b878f8d072b58faf0f1cf24 [stream]
+[debug] [2026-07-28T19:56:02.247Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/c090927d56ff8931bb5b5c0d9857ecfaed84df923359ce07e61ba11fcca8debc [none]
+[debug] [2026-07-28T19:56:02.247Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/c090927d56ff8931bb5b5c0d9857ecfaed84df923359ce07e61ba11fcca8debc [stream]
+[debug] [2026-07-28T19:56:02.248Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/7174489fb9243d25bf9e27dc2e2439eab83a27f46a16e6acc89f2a6eaa6d6418 [none]
+[debug] [2026-07-28T19:56:02.248Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/7174489fb9243d25bf9e27dc2e2439eab83a27f46a16e6acc89f2a6eaa6d6418 [stream]
+[debug] [2026-07-28T19:56:02.249Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/7c7fa2a532e28901dc474a878f86131e9c5dffd0a2eb8c3aed4b3144cda71a3e [none]
+[debug] [2026-07-28T19:56:02.249Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/7c7fa2a532e28901dc474a878f86131e9c5dffd0a2eb8c3aed4b3144cda71a3e [stream]
+[debug] [2026-07-28T19:56:02.250Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/adb688dd54d3ef5625458c6785299651d42ddf67f63823c7ea712a7732060213 [none]
+[debug] [2026-07-28T19:56:02.250Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/adb688dd54d3ef5625458c6785299651d42ddf67f63823c7ea712a7732060213 [stream]
+[debug] [2026-07-28T19:56:02.250Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/081f13995c118665a5b083d1ca069ebdca9d494ac5180cda80bfa9662d888ef7 [none]
+[debug] [2026-07-28T19:56:02.251Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/081f13995c118665a5b083d1ca069ebdca9d494ac5180cda80bfa9662d888ef7 [stream]
+[debug] [2026-07-28T19:56:02.265Z] [hosting][populate queue][FINAL] {"max":907,"min":907,"avg":907,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":937}
+[debug] [2026-07-28T19:56:02.265Z] [hosting] uploads queued: 15
+[info] i  hosting: uploading new files [0/15] (0%) 
+[debug] [2026-07-28T19:56:04.048Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/5c0591a0725ad202634227072ea4d6c45c1c3a55671d5d45d1be55826ed0198a 200
+[debug] [2026-07-28T19:56:04.048Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/5c0591a0725ad202634227072ea4d6c45c1c3a55671d5d45d1be55826ed0198a [stream]
+[debug] [2026-07-28T19:56:04.209Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/2a5a2a3797fc934e113f407f05347ccfcea018a61a879db1891e6f5520d59ca6 200
+[debug] [2026-07-28T19:56:04.209Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/2a5a2a3797fc934e113f407f05347ccfcea018a61a879db1891e6f5520d59ca6 [stream]
+[debug] [2026-07-28T19:56:04.212Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/349fc8880bdd93bb55e45f75f47718e97f264ac053181be36d9dc61fee1566e4 200
+[debug] [2026-07-28T19:56:04.212Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/349fc8880bdd93bb55e45f75f47718e97f264ac053181be36d9dc61fee1566e4 [stream]
+[debug] [2026-07-28T19:56:04.260Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/ab658aad515b715d212ae629776f8a098f452f315ce58e4d4889de214cdca49d 200
+[debug] [2026-07-28T19:56:04.261Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/ab658aad515b715d212ae629776f8a098f452f315ce58e4d4889de214cdca49d [stream]
+[debug] [2026-07-28T19:56:04.262Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/a04f2ced6e57982a044e77f8306e60bf3c5762c4adf39608036a1f47ed66a5ea 200
+[debug] [2026-07-28T19:56:04.263Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/a04f2ced6e57982a044e77f8306e60bf3c5762c4adf39608036a1f47ed66a5ea [stream]
+[debug] [2026-07-28T19:56:04.287Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/081f13995c118665a5b083d1ca069ebdca9d494ac5180cda80bfa9662d888ef7 200
+[debug] [2026-07-28T19:56:04.287Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/081f13995c118665a5b083d1ca069ebdca9d494ac5180cda80bfa9662d888ef7 [stream]
+[debug] [2026-07-28T19:56:04.295Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/ccc4f7463949966989c451f82529162aa648b2066b878f8d072b58faf0f1cf24 200
+[debug] [2026-07-28T19:56:04.295Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/ccc4f7463949966989c451f82529162aa648b2066b878f8d072b58faf0f1cf24 [stream]
+[debug] [2026-07-28T19:56:04.355Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/06d4bfe03c972d4679040fcfd1221157802da6bf9389c536003d81323687e949 200
+[debug] [2026-07-28T19:56:04.355Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/06d4bfe03c972d4679040fcfd1221157802da6bf9389c536003d81323687e949 [stream]
+[debug] [2026-07-28T19:56:04.406Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/adb688dd54d3ef5625458c6785299651d42ddf67f63823c7ea712a7732060213 200
+[debug] [2026-07-28T19:56:04.406Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/adb688dd54d3ef5625458c6785299651d42ddf67f63823c7ea712a7732060213 [stream]
+[debug] [2026-07-28T19:56:04.422Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/b9f4ee25ab5d64e64862311af3e14d6dc898abde325c181db8a1df4254ded50d 200
+[debug] [2026-07-28T19:56:04.422Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/b9f4ee25ab5d64e64862311af3e14d6dc898abde325c181db8a1df4254ded50d [stream]
+[debug] [2026-07-28T19:56:04.432Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/7c7fa2a532e28901dc474a878f86131e9c5dffd0a2eb8c3aed4b3144cda71a3e 200
+[debug] [2026-07-28T19:56:04.432Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/7c7fa2a532e28901dc474a878f86131e9c5dffd0a2eb8c3aed4b3144cda71a3e [stream]
+[debug] [2026-07-28T19:56:04.451Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/c090927d56ff8931bb5b5c0d9857ecfaed84df923359ce07e61ba11fcca8debc 200
+[debug] [2026-07-28T19:56:04.451Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/c090927d56ff8931bb5b5c0d9857ecfaed84df923359ce07e61ba11fcca8debc [stream]
+[debug] [2026-07-28T19:56:04.455Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/7174489fb9243d25bf9e27dc2e2439eab83a27f46a16e6acc89f2a6eaa6d6418 200
+[debug] [2026-07-28T19:56:04.455Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/7174489fb9243d25bf9e27dc2e2439eab83a27f46a16e6acc89f2a6eaa6d6418 [stream]
+[debug] [2026-07-28T19:56:04.480Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/8d757df394038c5a5594f4c15d9f5e496639b44b8b1afba499f13e58c92962a3 200
+[debug] [2026-07-28T19:56:04.480Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/8d757df394038c5a5594f4c15d9f5e496639b44b8b1afba499f13e58c92962a3 [stream]
+[debug] [2026-07-28T19:56:04.674Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/6584c31b7e034975175b32bc61eb991b248b97e24769db181c74d4ee4076fcb7 200
+[debug] [2026-07-28T19:56:04.674Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/west-seneca-tree-service/versions/637068e357a8fe6b/files/6584c31b7e034975175b32bc61eb991b248b97e24769db181c74d4ee4076fcb7 [stream]
+[debug] [2026-07-28T19:56:04.675Z] [hosting][upload queue][FINAL] {"max":2442,"min":1821,"avg":2119.733333333333,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":2449}
+[info] i  hosting: upload complete 
+[info] +  hosting[west-seneca-tree-service]: file upload complete 
+[debug] [2026-07-28T19:56:04.675Z] [hosting] deploy completed after 3408ms
+[debug] [2026-07-28T19:56:04.676Z] [
+  {
+    "config": {
+      "public": "firebase-dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "headers": [
+        {
+          "source": "**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=31536000,immutable"
+            }
+          ]
+        },
+        {
+          "source": "**/*.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=0,must-revalidate"
+            }
+          ]
+        }
+      ],
+      "site": "west-seneca-tree-service"
+    },
+    "version": "projects/1011684863730/sites/west-seneca-tree-service/versions/637068e357a8fe6b"
+  }
+]
+[info] i  hosting[west-seneca-tree-service]: finalizing version... 
+[debug] [2026-07-28T19:56:04.679Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:04.679Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:04.679Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/637068e357a8fe6b updateMask=status%2Cconfig
+[debug] [2026-07-28T19:56:04.680Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/637068e357a8fe6b {"status":"FINALIZED","config":{"headers":[{"glob":"**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)","headers":{"Cache-Control":"public,max-age=31536000,immutable"}},{"glob":"**/*.html","headers":{"Cache-Control":"public,max-age=0,must-revalidate"}}],"cleanUrls":true,"trailingSlashBehavior":"REMOVE"}}
+[debug] [2026-07-28T19:56:05.429Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/637068e357a8fe6b 200
+[debug] [2026-07-28T19:56:05.429Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/versions/637068e357a8fe6b {"name":"projects/1011684863730/sites/west-seneca-tree-service/versions/637068e357a8fe6b","status":"FINALIZED","config":{"headers":[{"headers":{"Cache-Control":"public,max-age=31536000,immutable"},"glob":"**/*.@(js|css|png|jpg|jpeg|webp|svg|woff|woff2)"},{"headers":{"Cache-Control":"public,max-age=0,must-revalidate"},"glob":"**/*.html"}],"cleanUrls":true,"trailingSlashBehavior":"REMOVE"},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-07-28T19:56:01.530077Z","createUser":{"email":"marketingkd27@gmail.com"},"finalizeTime":"2026-07-28T19:56:06.299617Z","finalizeUser":{"email":"marketingkd27@gmail.com"}}
+[debug] [2026-07-28T19:56:05.429Z] [hosting] finalized version for west-seneca-tree-service:[object Object]
+[info] +  hosting[west-seneca-tree-service]: version finalized 
+[info] i  hosting[west-seneca-tree-service]: releasing new version... 
+[debug] [2026-07-28T19:56:05.430Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:05.430Z] Checked if tokens are valid: true, expires at: 1785270005907
+[debug] [2026-07-28T19:56:05.430Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases versionName=projects%2F1011684863730%2Fsites%2Fwest-seneca-tree-service%2Fversions%2F637068e357a8fe6b
+[debug] [2026-07-28T19:56:05.430Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases {}
+[debug] [2026-07-28T19:56:06.252Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/west-seneca-tree-service/channels/live/releases 200

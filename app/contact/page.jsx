@@ -26,6 +26,7 @@ export default function ContactPage() {
           </aside>
           <div className="contact-embed">
             <iframe
+              loading="lazy"
               src="https://link.kdlead.com/widget/form/4JzGDJCOq5EsGZxtPaiM"
               id="inline-4JzGDJCOq5EsGZxtPaiM"
               data-layout='{"id":"INLINE"}'

@@ -25,7 +25,7 @@ export default function WhyUsPage() {
       <section className="page-content section">
         <div className="shell reason-grid">
           {reasons.map(([image, alt, title, text]) => (
-            <article className="reason-card" key={title}><img src={image} alt={alt} loading="lazy" /><h2>{title}</h2><p>{text}</p></article>
+            <article className="reason-card" key={title}><img src={image} alt={alt} width="900" height="540" loading="lazy" decoding="async" /><h2>{title}</h2><p>{text}</p></article>
           ))}
         </div>
       </section>

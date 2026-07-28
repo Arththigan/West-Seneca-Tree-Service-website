@@ -35,7 +35,7 @@ export default function SiteNav() {
   return (
     <header className={scrolled ? 'site-header is-scrolled' : 'site-header'}>
       <a className="brand" href="/" onClick={navigate} aria-label="West Seneca Tree Service home">
-        <img className="brand-logo" src="/west-seneca-tree-service-logo.png" alt="West Seneca Tree Service" />
+        <img className="brand-logo" src="/west-seneca-tree-service-logo.png" alt="West Seneca Tree Service" width="1200" height="900" />
       </a>
       <button className="menu-button" onClick={() => setOpen(!open)} aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} aria-controls="primary-navigation">
         {open ? <X /> : <Menu />}

@@ -7,7 +7,7 @@ export default function ServiceDetail({ eyebrow, title, intro, image, imageAlt, 
       <section className="service-detail section">
         <div className="shell service-detail-intro">
           <div className="service-detail-photo">
-            <img src={image} alt={imageAlt} />
+            <img src={image} alt={imageAlt} width="1500" height="1000" loading="lazy" decoding="async" />
           </div>
           <div className="service-detail-copy">
             <span className="kicker">About this service</span>

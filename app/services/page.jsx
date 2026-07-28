@@ -27,7 +27,7 @@ export default function ServicesPage() {
           {services.map(([id, image, alt, title, text, href], index) => (
             <article id={id} className="interior-service" key={id}>
               <div className="interior-service-number">0{index + 1}</div>
-              <div className="interior-service-image"><img src={image} alt={alt} loading="lazy" /></div>
+              <div className="interior-service-image"><img src={image} alt={alt} width="700" height="560" loading="lazy" decoding="async" /></div>
               <div><h2>{title}</h2><p>{text}</p><a href={href}>Learn about this service →</a></div>
             </article>
           ))}

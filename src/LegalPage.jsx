@@ -13,7 +13,7 @@ export default function LegalPage({ title, effective, updated, children }) {
       <article className="shell legal-content">{children}</article>
       <footer>
         <div className="shell footer-top">
-          <div className="footer-brand"><img src="/west-seneca-tree-service-logo.png" alt="West Seneca Tree Service" width="1200" height="900" loading="lazy" /></div>
+          <div className="footer-brand"><img src="/west-seneca-tree-service-logo.webp" alt="West Seneca Tree Service" width="384" height="288" loading="lazy" decoding="async" /></div>
           <div><small>Call us</small><a href="tel:+17167978733">(716) 797-8733</a></div>
           <div><small>Address</small><p>44 Century Dr, Buffalo, NY 14224</p></div>
           <div className="footer-link-column"><small>Quick links</small><nav aria-label="Footer navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/our-process">Our process</a><a href="/why-us">Why us</a><a href="/contact">Contact</a></nav><span><a href="/privacy-policy">Privacy Policy</a><a href="/terms-conditions">Terms &amp; Conditions</a></span></div>

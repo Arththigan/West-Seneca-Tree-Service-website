@@ -74,6 +74,10 @@ try {
     resolve(root, 'public/west-seneca-tree-service-logo.png'),
     resolve(output, 'west-seneca-tree-service-logo.png'),
   )
+  await cp(
+    resolve(root, 'public/west-seneca-tree-service-logo.webp'),
+    resolve(output, 'west-seneca-tree-service-logo.webp'),
+  )
   await cp(resolve(root, 'public/firebase-runtime.js'), resolve(output, 'firebase-runtime-v3.js'))
   console.log(`Firebase export complete: ${routes.length} routes written to firebase-dist`)
 } finally {

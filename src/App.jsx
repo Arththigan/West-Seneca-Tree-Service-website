@@ -10,10 +10,10 @@ const phone = '(716) 797-8733'
 const phoneHref = 'tel:+17167978733'
 
 const services = [
-  { n: '01', title: 'Tree Removal', text: 'Safe, controlled removal for hazardous, damaged, or unwanted trees.', tone: 'lime', href: '/services/tree-removal', image: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg?auto=compress&cs=tinysrgb&w=700', alt: 'Arborist safely cutting a tree while secured with climbing equipment' },
-  { n: '02', title: 'Tree Trimming', text: 'Thoughtful trimming that protects your property and keeps trees thriving.', tone: 'cream', href: '/services/tree-trimming', image: 'https://images.pexels.com/photos/34674271/pexels-photo-34674271.jpeg?auto=compress&cs=tinysrgb&w=700', alt: 'Professional arborist climbing a tree for pruning and maintenance' },
-  { n: '03', title: 'Stump Grinding', text: 'Clear old stumps and reclaim usable space without the lingering mess.', tone: 'yellow', href: '/services/stump-grinding', image: 'https://images.unsplash.com/photo-1754321895426-68b04ba453e3?auto=format&fit=crop&w=700&q=82', alt: 'Tree-service worker operating professional stump grinding equipment' },
-  { n: '04', title: 'Storm Cleanup', text: 'Fast help for fallen limbs, blocked access, and urgent tree hazards.', tone: 'green', href: '/services/storm-cleanup', image: 'https://images.pexels.com/photos/32394146/pexels-photo-32394146.jpeg?auto=compress&cs=tinysrgb&w=700', alt: 'Large uprooted tree after severe storm damage in a residential area' },
+  { n: '01', title: 'Tree Removal', text: 'Safe, controlled removal for hazardous, damaged, or unwanted trees.', tone: 'lime', href: '/services/tree-removal', image: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg?auto=compress&cs=tinysrgb&w=520&q=68', alt: 'Arborist safely cutting a tree while secured with climbing equipment' },
+  { n: '02', title: 'Tree Trimming', text: 'Thoughtful trimming that protects your property and keeps trees thriving.', tone: 'cream', href: '/services/tree-trimming', image: 'https://images.pexels.com/photos/34674271/pexels-photo-34674271.jpeg?auto=compress&cs=tinysrgb&w=520&q=68', alt: 'Professional arborist climbing a tree for pruning and maintenance' },
+  { n: '03', title: 'Stump Grinding', text: 'Clear old stumps and reclaim usable space without the lingering mess.', tone: 'yellow', href: '/services/stump-grinding', image: 'https://images.unsplash.com/photo-1754321895426-68b04ba453e3?auto=format&fit=crop&w=520&q=66', alt: 'Tree-service worker operating professional stump grinding equipment' },
+  { n: '04', title: 'Storm Cleanup', text: 'Fast help for fallen limbs, blocked access, and urgent tree hazards.', tone: 'green', href: '/services/storm-cleanup', image: 'https://images.pexels.com/photos/32394146/pexels-photo-32394146.jpeg?auto=compress&cs=tinysrgb&w=520&q=68', alt: 'Large uprooted tree after severe storm damage in a residential area' },
 ]
 
 const steps = [
@@ -37,7 +37,7 @@ function TreeVisual() {
       <div className="tree-model realistic-scene">
         <div className="real-photo-card main-photo">
           <img
-            src="https://images.unsplash.com/photo-1765064519883-651c506ec70d?auto=format&fit=crop&w=900&q=80"
+            src="https://images.unsplash.com/photo-1765064519883-651c506ec70d?auto=format&fit=crop&w=700&q=66"
             alt=""
             width="900"
             height="1107"
@@ -48,7 +48,7 @@ function TreeVisual() {
         </div>
         <div className="real-photo-card secondary-photo">
           <img
-            src="https://images.unsplash.com/photo-1754321871548-61bdbc6f1506?auto=format&fit=crop&w=600&q=80"
+            src="https://images.unsplash.com/photo-1754321871548-61bdbc6f1506?auto=format&fit=crop&w=480&q=66"
             alt=""
             width="600"
             height="723"
@@ -134,17 +134,17 @@ function App() {
           </div>
           <div className="photo-grid">
             <figure className="photo-card photo-large reveal">
-              <img src="https://images.unsplash.com/photo-1754322449005-bdc38c631682?auto=format&fit=crop&w=1000&q=78" alt="Professional arborist working in a mature tree with safety equipment" width="1000" height="1250" loading="lazy" decoding="async" />
+              <img src="https://images.unsplash.com/photo-1754322449005-bdc38c631682?auto=format&fit=crop&w=700&q=66" alt="Professional arborist working in a mature tree with safety equipment" width="700" height="875" loading="lazy" decoding="async" />
               <figcaption><b>Tree pruning at height</b></figcaption>
               <i className="photo-depth-label">Harness • Climbing • Pruning</i>
             </figure>
             <figure className="photo-card reveal">
-              <img src="https://images.unsplash.com/photo-1675726060825-3c12546247f0?auto=format&fit=crop&w=800&q=78" alt="Forestry worker using professional tree trimming equipment" width="800" height="520" loading="lazy" decoding="async" />
+              <img src="https://images.unsplash.com/photo-1675726060825-3c12546247f0?auto=format&fit=crop&w=650&q=66" alt="Forestry worker using professional tree trimming equipment" width="650" height="423" loading="lazy" decoding="async" />
               <figcaption><b>Careful access &amp; trimming</b></figcaption>
               <i className="photo-depth-label">Access • Teamwork</i>
             </figure>
             <figure className="photo-card reveal">
-              <img src="https://images.unsplash.com/photo-1754321902809-5c21cbc67228?auto=format&fit=crop&w=800&q=78" alt="Arborist pruning branches while working in a tree canopy" width="800" height="520" loading="lazy" decoding="async" />
+              <img src="https://images.unsplash.com/photo-1754321902809-5c21cbc67228?auto=format&fit=crop&w=650&q=66" alt="Arborist pruning branches while working in a tree canopy" width="650" height="423" loading="lazy" decoding="async" />
               <figcaption><b>Professional equipment</b></figcaption>
               <i className="photo-depth-label">Equipment • Cleanup</i>
             </figure>
@@ -278,7 +278,7 @@ function App() {
 
       <footer>
         <div className="shell footer-top">
-          <div className="footer-brand"><img src="/west-seneca-tree-service-logo.png" alt="West Seneca Tree Service" width="1200" height="900" loading="lazy" /></div>
+          <div className="footer-brand"><img src="/west-seneca-tree-service-logo.webp" alt="West Seneca Tree Service" width="384" height="288" loading="lazy" decoding="async" /></div>
           <div><small>Call us</small><a href={phoneHref}>{phone}</a></div>
           <div><small>Address</small><p>44 Century Dr, Buffalo, NY 14224</p></div>
           <div className="footer-link-column"><small>Quick links</small><nav aria-label="Footer navigation"><a href="/">Home</a><a href="/services">Services</a><a href="/our-process">Our process</a><a href="/why-us">Why us</a><a href="/contact">Contact</a></nav><span><a href="/privacy-policy">Privacy Policy</a><a href="/terms-conditions">Terms &amp; Conditions</a></span></div>

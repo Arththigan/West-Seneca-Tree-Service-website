@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vinext dev",
-    "build": "vinext build && node scripts/copy-hosting.js",
-    "build:firebase": "npm run build && node scripts/export-firebase.js",
-    "start": "vinext start",
+    "dev": "node init && vinext dev",
+    "build": "node init && vinext build && node scripts/copy-hosting.js",
+    "build:firebase": "node init && npm run build && node scripts/export-firebase.js",
+    "start": "node init && vinext start",
     "check": "eslint ."
   },
   "dependencies": {
